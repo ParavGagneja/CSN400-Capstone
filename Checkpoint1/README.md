@@ -23,3 +23,57 @@
      style="float: left; margin-right: 10px;" />
 
 ### My Single Line Code
+To convert single line code to `embedded code` use single backticks.
+
+### My Multiplt Line Code
+Here's the example of Multiple line embedded code
+```bash
+#!/bin/bash
+
+params=(
+    show
+    hello,
+    world
+    "multi word"
+)
+function show {
+    echo --- Showing \""$@"\" as parameters ---
+    for i in "$@"; do
+        echo i=$i
+    done
+}
+```
+
+### My Sample json object
+`json object` represented with `Markdown Language` will look like following:
+
+```json
+{ 
+    "employee": {
+        "Campus": [
+            {"id":1,"name":"Robert Downey"},
+            {"id":2,"name":"Elizabeth Olsen"}
+        ],
+        "country": {"id":2,"company":"MARVEL"}
+    }, 
+    "brewing": {
+        "region": [
+            {"id":1,"name":"Robert Downey"},
+            {"id":2,"name":"Elizabeth Olsen"}
+        ],
+        "country": {"id":2,"company":"MARVEL"}
+    }
+}
+```
+
+### Table 
+Let's learn how to create table using Markdown language:
+
+| Coding Languages | Description |
+| - | - |
+| `Python` | Python is a high-level, versatile programming language known for its simplicity and readability.|
+| `JavaScript` | JavaScript is a dynamic, interpreted programming language primarily used for web development.|
+| `C++` | C++ is a powerful, general-purpose programming language that extends the C language with additional features like object-oriented programming |
+
+### Hyperlink 
+- [Introduction to HTMl](https://www.geeksforgeeks.org/html-introduction/)
