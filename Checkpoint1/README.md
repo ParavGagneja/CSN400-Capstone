@@ -8,11 +8,11 @@
 
 ### Table of Contents
 - [My Collaboration Image](#my-collaboration-image)
-- single line code snippet
-- multi line code snippet (preferably bash script"
-- sample json objects
-- sample table
-- sample hyperlink
+- [My Single Line Code](#my-single-line-code)
+- [My Multi Line Code](#my-multi-line-code)
+- [My Sample json object](#my-sample-json-object)
+- [Table](#table)
+- [Hyperlink](#hyperlink)
 
 ### My Collaboration Image
 <p align="center";>My collaboration image with AtoosaNasiri-Seneca</p>
@@ -25,8 +25,8 @@
 ### My Single Line Code
 To convert single line code to `embedded code` use single backticks.
 
-### My Multiplt Line Code
-Here's the example of Multiple line embedded code
+### My Multi Line Code
+Here's the example of Multi line embedded code
 ```bash
 #!/bin/bash
 
