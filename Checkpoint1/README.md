@@ -7,14 +7,14 @@
 - **TEACHER’S NAME: Atoosa Nasiri**
 
 ### Table of Contents
-- [Collaboration Image](#collaboration-image)
+- [My Collaboration Image](#my-collaboration-image)
 - single line code snippet
 - multi line code snippet (preferably bash script"
 - sample json objects
 - sample table
 - sample hyperlink
 
-### Collaboration Image
+### My Collaboration Image
 <p align="center";>My collaboration image with AtoosaNasiri-Seneca</p>
 
 <img src="Collaboration.jpg"
@@ -22,3 +22,4 @@
      title="Repository Collaboration"
      style="float: left; margin-right: 10px;" />
 
+### My Single Line Code
