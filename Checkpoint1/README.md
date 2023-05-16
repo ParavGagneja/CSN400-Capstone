@@ -15,7 +15,7 @@
 - sample hyperlink
 
 <h3>Collaboration Image</h3>
-<p align="center">My collaboration image with AtoosaNasiri-Seneca</p>
+<p style="color: red";>My collaboration image with AtoosaNasiri-Seneca</p>
 
 <img src="Collaboration.jpg"
      alt="Repository Collaboration Image"
