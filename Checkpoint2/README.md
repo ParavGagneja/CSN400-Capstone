@@ -8,10 +8,12 @@
 
 
 ### Table of Contents
-1. [Part A - Adding Files - Local Repo Workflow](#Part---A---AddingFiles---Local-Repo-Workflow)
-2. [Part B - Inspecting Local Repo with `git status` and `git log`](#header2)
-3. [Part C - Creating & Merging Branches](#header3)
-4. [Part D - Git Branching Strategy Review Question](#head)
+- [Checkpoint2 Submission](#checkpoint2-submission)
+    - [Table of Contents](#table-of-contents)
+    - [1. Part A - Adding Files - Local Repo Workflow](#1-part-a---adding-files---local-repo-workflow)
+    - [2. Part B - Inspecting Local Repo with `git status` and `git log`](#2-part-b---inspecting-local-repo-with-git-status-and-git-log)
+    - [3. Part C - Creating \& Merging Branches](#3-part-c---creating--merging-branches)
+    - [4. Part D - Git Branching Strategy Review Question](#4-part-d---git-branching-strategy-review-question)
 
 
 ### 1. Part A - Adding Files - Local Repo Workflow
@@ -29,6 +31,6 @@ With that we are saving the output of "git status" command in the files with the
 git status - show the current status of directory, in which state file is right now eg. Staging, Local or remote
 git log - show the changes occured in past, it shows history like what changes have been done.
 
-### 3. Part C - Creating & Merging Branches: Run `git log -n 5`. Embed the log output as bash script to the `README.md` with proper formatting.
+### 3. Part C - Creating & Merging Branches
 
-### 4. Part D - Git Branching Strategy Review Question: Answer the questions briefly, make sure to format your work with markdown properly.
+### 4. Part D - Git Branching Strategy Review Question
