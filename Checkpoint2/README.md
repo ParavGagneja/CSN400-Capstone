@@ -5,3 +5,7 @@
 - **STUDENT'S NUMBER: 104415211**
 - **GITHUB USER ID: 104415211-myseneca**
 - **TEACHER’S NAME: Atoosa Nasiri**
+
+We are using "git add" to push changes to staging area
+the we use "git commit" to commit what we modified
+and then "git push" to add those changes to Remote repo.
