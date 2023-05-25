@@ -8,4 +8,6 @@
 
 We are using "git add" to push changes to staging area
 the we use "git commit" to commit what we modified
-and then "git push" to add those changes to Remote repo.
+and then "git push" to add those changes to Remote repo
+
+With that we are saving the output of "git status" command in the files with their status
