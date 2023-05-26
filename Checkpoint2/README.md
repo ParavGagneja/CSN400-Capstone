@@ -8,7 +8,6 @@
 
 
 ### Table of Contents
-  
 - [Checkpoint2 Submission](#checkpoint2-submission)
     - [Table of Contents](#table-of-contents)
     - [1. Part A - Adding Files - Local Repo Workflow](#1-part-a---adding-files---local-repo-workflow)
@@ -75,6 +74,7 @@ Date:   Thu May 25 18:17:33 2023 -0400
    `develop branch` : It is considered as temporary branch, when ever a new feature is created or a bug is detected, develop branch is made to test before any action. Eventually get merged with main branch.
 
 2. Three supporting branches:
+   
    a. `Feature/Bugfix branches`: This branch is created with the purpose of adding a new feature or fixing any bugs faced in code. The span of this branch is only until the work in done, afterthat it is added back to main branch.
 
    b. `Hotfix branches` : This branch come in action only when there is an immediate action need to be taken. eg. while running a website, it is not loading data or working slow at that point this is created to fix issue asap.
