@@ -28,8 +28,9 @@ With that we are saving the output of "git status" command in the files with the
 
 ### 2. Part B - Inspecting Local Repo with `git status` and `git log`
 
-git status - show the current status of directory, in which state file is right now eg. Staging, Local or remote
-git log - show the changes occured in past, it shows history like what changes have been done.
+`git status` - show the current status of directory, in which state file is right now eg. Staging, Local or remote. using this command we can check is there any changes which needs to be staged, commit or push. eg: after doing changes on a file I run git stauts to check whether changes are saved and are ready to stage.
+
+`git log` - show the changes occured in past, it shows history like what changes have been done. eg: In a running project manager wants to check who what progress has been done and who is playing major role, so logs could be friutful in that case.
 
 ### 3. Part C - Creating & Merging Branches
 
