@@ -33,5 +33,38 @@ With that we are saving the output of "git status" command in the files with the
 `git log` - show the changes occured in past, it shows history like what changes have been done. eg: In a running project manager wants to check who what progress has been done and who is playing major role, so logs could be friutful in that case.
 
 ### 3. Part C - Creating & Merging Branches
+``` bash
+parav@LAPTOP-IUCQG101 MINGW64 /e/SEM 5/CSN400/Azure/VSCode/CSN400-Capstone/Checkpoint2 (main)
+$ git log -n 5
+commit 8e6d88c26f3d86881166caf7fb5aca58ec0e6dc3 (HEAD -> main, origin/feat-emojis, feat-emojis)
+Author: pgagneja <pgagneja@myseneca.ca>
+Date:   Thu May 25 20:41:26 2023 -0400
+
+    adds emojis to feat-emojis branch
+
+commit b5b05f2653a59cec9d868eb5b829652ce2d9a66e (origin/main, origin/HEAD)
+Author: pgagneja <pgagneja@myseneca.ca>
+Date:   Thu May 25 20:18:14 2023 -0400
+
+    adds footnotes folder
+
+commit 9be88825e4ad09eaa07c29505f9fb18f6509a72a
+Author: pgagneja <pgagneja@myseneca.ca>
+Date:   Thu May 25 20:02:42 2023 -0400
+
+    Part B description done
+
+commit e69bb4adf401fa5e44d4cc072338a9059a41c351
+Author: pgagneja <pgagneja@myseneca.ca>
+Date:   Thu May 25 19:56:50 2023 -0400
+
+    Headers working
+
+commit e7c76a8047602a09a540fef2d6b5d3427c5320b8
+Author: pgagneja <pgagneja@myseneca.ca>
+Date:   Thu May 25 18:17:33 2023 -0400
+
+    Header test
+```
 
 ### 4. Part D - Git Branching Strategy Review Question
