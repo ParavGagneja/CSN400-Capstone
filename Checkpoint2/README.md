@@ -8,6 +8,7 @@
 
 
 ### Table of Contents
+  
 - [Checkpoint2 Submission](#checkpoint2-submission)
     - [Table of Contents](#table-of-contents)
     - [1. Part A - Adding Files - Local Repo Workflow](#1-part-a---adding-files---local-repo-workflow)
@@ -68,3 +69,21 @@ Date:   Thu May 25 18:17:33 2023 -0400
 ```
 
 ### 4. Part D - Git Branching Strategy Review Question
+
+1. `main branch` : It is like base of whole project, contains all the finalised, approved and tested code. 
+   
+   `develop branch` : It is considered as temporary branch, when ever a new feature is created or a bug is detected, develop branch is made to test before any action. Eventually get merged with main branch.
+
+2. Three supporting branches:
+   a. `Feature/Bugfix branches`: This branch is created with the purpose of adding a new feature or fixing any bugs faced in code. The span of this branch is only until the work in done, afterthat it is added back to main branch.
+
+   b. `Hotfix branches` : This branch come in action only when there is an immediate action need to be taken. eg. while running a website, it is not loading data or working slow at that point this is created to fix issue asap.
+
+   c. `Release branches` : As the name suggest when a new feature is ready to be deployed or bugs are sorte and merged in develop branch and read to release means ready to merged with main branch.
+
+3. The best practices in working with release branches
+   a. When the code is ready, tested and approved it is added in release branch so to review all the changes procedure and sturcture again before the release.
+
+   b. In the condition when everything is ready and planned to relase on other time, code can be left in this so at last minute just have to merge this.
+
+   c. Other practice could be after even testing it would be a good idea to observe that the any modulation happening because of new code which might be not compatible with main code.
