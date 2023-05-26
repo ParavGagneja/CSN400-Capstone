@@ -24,6 +24,35 @@ and then "git push" to add those changes to Remote repo
 
 With that we are saving the output of "git status" command in the files with their status
 
+`git_status_uncommited.txt` OUTPUT:
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   git_status_untracked.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status_uncommitted.txt
+
+
+
+
+`git_status_commited.txt` OUTPUT:
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status_committed.txt
+	git_status_uncommitted.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
 
 
 ### 2. Part B - Inspecting Local Repo with `git status` and `git log`
