@@ -64,7 +64,6 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
 ``` bash
-
 part2-pull-error.log
 
 POST git-upload-pack (196 bytes)
@@ -79,7 +78,6 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 
 ``` bash
-
 part2-reset-head.log
 
 HEAD is now at ff1751b modifies style color in index.html to green
@@ -87,7 +85,6 @@ HEAD is now at ff1751b modifies style color in index.html to green
 ```
 
 ``` bash 
-
 part2-reset-head.log
 
 HEAD is now at ff1751b modifies style color in index.html to green
@@ -99,7 +96,6 @@ Date:   Tue May 30 16:05:38 2023 -0400
 ```
 
 ``` bash 
-
 part2-pull-success.log
 
 POST git-upload-pack (196 bytes)
@@ -116,7 +112,19 @@ Fast-forward
 
 ### Part C - Manage Conflicts - Merge Editor
 
+``` bash
+part3-pull-conflict.log
 
+POST git-upload-pack (375 bytes)
+POST git-upload-pack (968 bytes)
+From https://github.com/104415211-myseneca/CSN400-Capstone
+ * branch            feat-body-text -> FETCH_HEAD
+ * [new branch]      feat-body-text -> origin/feat-body-text
+Auto-merging Checkpoint3/conflict-resolution/index.html
+CONFLICT (content): Merge conflict in Checkpoint3/conflict-resolution/index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+```
 
 
 ### Part D - Collaboration - Creating Pull Request
