@@ -142,4 +142,10 @@ Untracked files:
 	Checkpoint3/logs/part3-status.log
 
 ```
+
+<img src="PartC.jpg"
+     alt="Part C screenshot merge completed"
+     title="Part C merge completed"
+     style="float: left; margin-right: 10px;" />
+     
 ### Part D - Collaboration - Creating Pull Request
