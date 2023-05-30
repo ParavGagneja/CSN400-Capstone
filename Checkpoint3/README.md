@@ -15,13 +15,6 @@
     - [Part D - Collaboration - Creating Pull Request](#part-d---collaboration---creating-pull-request)
 
 ### Part A - Manage Conflicts - Overwrite Remote Changes
-``` bash
-part1-conflict-error.log
-
-
-```
-
-
 ``` bash 
 part1-conflict-overwrite.log 
 
@@ -147,6 +140,6 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	Checkpoint3/logs/part3-pull-conflict.log
 	Checkpoint3/logs/part3-status.log
-    
+
 ```
 ### Part D - Collaboration - Creating Pull Request
