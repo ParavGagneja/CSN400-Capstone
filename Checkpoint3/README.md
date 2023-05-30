@@ -143,9 +143,9 @@ Untracked files:
 
 ```
 
-<img src="PartC.jpg"
+<img src="Part C.jpg"
      alt="Part C screenshot merge completed"
      title="Part C merge completed"
      style="float: left; margin-right: 10px;" />
-     
+
 ### Part D - Collaboration - Creating Pull Request
