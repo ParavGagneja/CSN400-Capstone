@@ -149,3 +149,8 @@ Untracked files:
      style="float: left; margin-right: 10px;" />
 
 ### Part D - Collaboration - Creating Pull Request
+
+<img src="Part D.jpg"
+     alt="Part D pull request summary"
+     title="Part D pull request completed"
+     style="float: left; margin-right: 10px;" />
