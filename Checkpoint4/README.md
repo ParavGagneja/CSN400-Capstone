@@ -20,10 +20,9 @@
 <ol type="I" style="color: green">
 <li>Dockerhub Account Created</li>
 <br>
-`vmkd`
 <img src="Images/1.2.jpg"
      alt="Dockerhub Account Created"
-     style="float: left; margin-right: 10px;margin-bottom: 60px;" />
+     style="float: left; margin-right: 10px;margin-bottom: 200px;" />
 
 <li>Docker Desktop and  Windows Subsystem for Linux (WSL) installing</li>
 <br>
