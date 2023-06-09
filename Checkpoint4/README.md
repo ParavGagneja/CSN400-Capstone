@@ -35,7 +35,13 @@
 <img src="Images/1.6.jpg"
      alt="Hyper-V enabled"
      style="float: left; margin-right: 10px;" />
-
+<br>
+<li>Docker Version</li>
+<br>
+<img src="Images/1.7.jpg"
+     alt="Docker Version"
+     style="float: left; margin-right: 10px;" />
+<br>
 </ol>
 </em>
 
