@@ -22,10 +22,17 @@
 <br>
 <img src="Images/1.2.jpg"
      alt="Dockerhub Account Created"
+     style="float: left; margin-right: 10px;margin-bottom: 20px;" />
+
+<li>Docker Desktop and  Windows Subsystem for Linux (WSL) installing</li>
+<br>
+<img src="Images/1.5.jpg"
+     alt="Docker and WSL install"
      style="float: left; margin-right: 10px;" />
 </ol>
 </em>
 
 ### Part B -Run Your own container:
+`abc`
 ### Part C - Run Docker Hub Image:
 ### Part D - Publish your images:
