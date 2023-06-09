@@ -30,7 +30,7 @@
 <br>
 <img src="Images/1.5.jpg"
      alt="Docker and WSL install"
-     widht="70%"
+     width="70%"
      style="float: left; margin-right: 10px;" />
 <br>
 <li>Hyper-V enabled</li>
@@ -107,7 +107,7 @@
      alt="Build first image"
      width="70%"
      style="float: center; margin-right: 10px;" />
-<br>
+
 <img src="Images/2.3.2.jpg"
      alt="Running first image"
      width="70%"
@@ -119,10 +119,46 @@
      alt="port to run container"
      width="70%"
      style="float: center; margin-right: 10px;" />
-<br>
+
 <img src="Images/2.4.2.jpg"
      alt="Running container"
      width="70%"
      style="float: center; margin-right: 10px;" />
+
+`On browser`
+
+<img src="Images/2.5.jpg"
+     alt="Container on browser"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+
 ### Part C - Run Docker Hub Image:
+
+`Image Search`
+
+<img src="Images/3.1.jpg"
+     alt="Image Search"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Run the image`
+
+<img src="Images/3.2.jpg"
+     alt="Run the image"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+<img src="Images/3.3.jpg"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Explore Container`
+
+<img src="Images/3.4.jpg"
+     alt="Explore Container"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+     
 ### Part D - Publish your images:
