@@ -36,7 +36,7 @@
 <br>
 <img src="Images/1.6.jpg"
      alt="Hyper-V enabled"
-     widht="70%"
+     height="60%"
      style="float: left; margin-right: 10px;" />
 <br>
 <li>Docker Version</li>
@@ -64,6 +64,20 @@
 <br>
 <img src="Images/1.8.3.jpg"
      alt="Frontend"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+<br>
+<li>Explore Container</li>
+<br>
+<img src="Images/1.8.4.jpg"
+     alt="Explore Container"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+<br>
+<li>Container Stopped</li>
+<br>
+<img src="Images/1.8.5.jpg"
+     alt="Container Stopped"
      width="70%"
      style="float: center; margin-right: 10px;" />
 <br>
