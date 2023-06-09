@@ -29,18 +29,21 @@
 <br>
 <img src="Images/1.5.jpg"
      alt="Docker and WSL install"
+     widht="70%"
      style="float: left; margin-right: 10px;" />
 <br>
 <li>Hyper-V enabled</li>
 <br>
 <img src="Images/1.6.jpg"
      alt="Hyper-V enabled"
+     widht="70%"
      style="float: left; margin-right: 10px;" />
 <br>
 <li>Docker Version</li>
 <br>
 <img src="Images/1.7.jpg"
      alt="Docker Version"
+     width="70%"
      style="float: left; margin-right: 10px;" />
 <br>
 <li>Docker Set up</li>
@@ -54,6 +57,13 @@
 <br>
 <img src="Images/1.8.2.jpg"
      alt="Containers on Docker Desktop"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+<br>
+<li>Frontend</li>
+<br>
+<img src="Images/1.8.3.jpg"
+     alt="Frontend"
      width="70%"
      style="float: center; margin-right: 10px;" />
 <br>
