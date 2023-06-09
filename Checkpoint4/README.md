@@ -16,6 +16,7 @@
 
 
 ### Part A - Working with Docker Desktop:
+
 <em>
 <ol type="I" style="color: green">
 <li>Dockerhub Account Created</li>
@@ -85,5 +86,12 @@
 </em>
 
 ### Part B -Run Your own container:
+
+`Clone with git`
+
+<img src="Images/2.1.jpg"
+     alt="Git clonned"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
 ### Part C - Run Docker Hub Image:
 ### Part D - Publish your images:
