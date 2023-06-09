@@ -162,3 +162,38 @@
 
      
 ### Part D - Publish your images:
+
+`Image Checked`
+
+<img src="Images/4.1.jpg"
+     alt="Image Check"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Account Signed up`
+
+<img src="Images/4.2.jpg"
+     alt="sign up account"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Image Renamed to 104415211myseneca`
+
+<img src="Images/4.3.jpg"
+     alt="Image Renamed"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Image Push`
+
+<img src="Images/4.4.jpg"
+     alt="Image push"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Image Push Verified`
+
+<img src="Images/4.5.jpg"
+     alt="Image Push Verified"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
