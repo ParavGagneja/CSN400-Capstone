@@ -93,5 +93,24 @@
      alt="Git clonned"
      width="70%"
      style="float: center; margin-right: 10px;" />
+
+`Dockerfile`
+
+<img src="Images/2.2.jpg"
+     alt="Dockerfile view"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Build first image`
+
+<img src="Images/2.3.1.jpg"
+     alt="Build first image"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+<img src="Images/2.3.2.jpg"
+     alt="Running first image"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
 ### Part C - Run Docker Hub Image:
 ### Part D - Publish your images:
