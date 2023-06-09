@@ -107,9 +107,21 @@
      alt="Build first image"
      width="70%"
      style="float: center; margin-right: 10px;" />
-
+<br>
 <img src="Images/2.3.2.jpg"
      alt="Running first image"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+
+`Run container`
+
+<img src="Images/2.4.1.jpg"
+     alt="port to run container"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+<br>
+<img src="Images/2.4.2.jpg"
+     alt="Running container"
      width="70%"
      style="float: center; margin-right: 10px;" />
 ### Part C - Run Docker Hub Image:
