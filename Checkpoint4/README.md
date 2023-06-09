@@ -22,6 +22,7 @@
 <br>
 <img src="Images/1.2.jpg"
      alt="Dockerhub Account Created"
+     width="70%"
      style="float: left; margin-right: 10px;margin-bottom: 20px;" />
 <br>
 <li>Docker Desktop and  Windows Subsystem for Linux (WSL) installing</li>
@@ -46,6 +47,13 @@
 <br>
 <img src="Images/1.8.1.jpg"
      alt="Docker Set up"
+     width="70%"
+     style="float: center; margin-right: 10px;" />
+<br>
+<li>Containers on Docker Desktop</li>
+<br>
+<img src="Images/1.8.2.jpg"
+     alt="Containers on Docker Desktop"
      width="70%"
      style="float: center; margin-right: 10px;" />
 <br>
