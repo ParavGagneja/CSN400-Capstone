@@ -20,9 +20,10 @@
 <ol type="I" style="color: green">
 <li>Dockerhub Account Created</li>
 <br>
+`vmkd`
 <img src="Images/1.2.jpg"
      alt="Dockerhub Account Created"
-     style="float: left; margin-right: 10px;margin-bottom: 20px;" />
+     style="float: left; margin-right: 10px;margin-bottom: 60px;" />
 
 <li>Docker Desktop and  Windows Subsystem for Linux (WSL) installing</li>
 <br>
@@ -33,6 +34,5 @@
 </em>
 
 ### Part B -Run Your own container:
-`abc`
 ### Part C - Run Docker Hub Image:
 ### Part D - Publish your images:
