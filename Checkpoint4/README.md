@@ -16,6 +16,16 @@
 
 
 ### Part A - Working with Docker Desktop:
+<em style="color: seagreen">
+<ol type="I">
+<li>Dockerhub Account Created</li>
+<br>
+<img src="Images/1.2.jpg"
+     alt="Dockerhub Account Created"
+     style="float: left; margin-right: 10px;" />
+</ol>
+</em>
+
 ### Part B -Run Your own container:
 ### Part C - Run Docker Hub Image:
 ### Part D - Publish your images:
