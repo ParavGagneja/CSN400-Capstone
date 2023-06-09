@@ -16,8 +16,8 @@
 
 
 ### Part A - Working with Docker Desktop:
-<em style="color: green">
-<ol type="I">
+<em>
+<ol type="I" style="color: green">
 <li>Dockerhub Account Created</li>
 <br>
 <img src="Images/1.2.jpg"
