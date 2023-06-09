@@ -16,7 +16,7 @@
 
 
 ### Part A - Working with Docker Desktop:
-<em style="color: seagreen">
+<em style="color: green">
 <ol type="I">
 <li>Dockerhub Account Created</li>
 <br>
