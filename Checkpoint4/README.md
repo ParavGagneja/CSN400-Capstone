@@ -46,7 +46,8 @@
 <br>
 <img src="Images/1.8.1.jpg"
      alt="Docker Set up"
-     style="float: left; margin-right: 10px;" />
+     width="70%"
+     style="float: center; margin-right: 10px;" />
 <br>
 </ol>
 </em>
