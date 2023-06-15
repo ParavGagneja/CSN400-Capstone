@@ -62,6 +62,17 @@ Using sqlite database at /etc/todos/todo.db
 Listening on port 3000
 
 ```
+
+<b>Question 5:</b>
+```
+"docker run -p 1000:3000 getting-started" according to syntax <host port>:<Container port>
+this means port 1000 in localhost must be used to reach container.
+```
+
+<b>Question 6:</b>
+```
+
+```
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
