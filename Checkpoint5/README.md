@@ -8,10 +8,12 @@
 
 
 ### Table of Contents
-1. [Part A - Containerize an application](#part-a---containerize-an-application)
-2. [Part B - Share the application](#part-b---share-the-application)
-3. [Part C - Persist the DB](#part-c---persist-the-db)
-4. [Part D - Multi container apps](#part-d---multi-container-apps)
+- [Checkpoint5 Submission](#checkpoint5-submission)
+    - [Table of Contents](#table-of-contents)
+    - [Part A - Containerize an application](#part-a---containerize-an-application)
+    - [Part B - Share the application](#part-b---share-the-application)
+    - [Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.](#part-c---persist-the-db-follow-the-instructions-and-embed-outputs-of-the-commands-asked-for)
+    - [Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.](#part-d---multi-container-apps-follow-the-instructions-and-and-embed-outputs-of-the-commands-asked-for)
 
 ### Part A - Containerize an application
 <b>Question 1:</b>
@@ -101,11 +103,18 @@ container associated with port 3000 to make it available and then allocated that
 
 <b>Question 9:</b>
 
-<img src="application_updated.jpg"
+<img src="images/application_updated.jpg"
      alt="Repository Collaboration Image"
      title="Repository Collaboration"
      style="float: left; margin-right: 10px;" />
 
-### Part B - Share the application: Follow the instructions and submit the screenshots.
+### Part B - Share the application
+` Create Repository`
+
+<img src="images/2.1.jpg"
+     alt="Repository Creating"
+     title="Repository Collaboration"
+     style="float: left; margin-right: 10px;" />
+     
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
