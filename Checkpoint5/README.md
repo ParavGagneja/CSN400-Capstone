@@ -179,5 +179,26 @@ mysql>
 ```
 
 ``` bash
+ ed53ec528f8e  ~  dig mysql
+
+; <<>> DiG 9.18.13 <<>> mysql
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 53965
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;mysql.                         IN      A
+
+;; ANSWER SECTION:
+mysql.                  600     IN      A       172.19.0.2
+
+;; Query time: 10 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Thu Jun 15 21:52:42 UTC 2023
+;; MSG SIZE  rcvd: 44
+```
+
+``` bash
 
 ```
