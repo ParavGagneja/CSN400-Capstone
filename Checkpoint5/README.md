@@ -45,6 +45,23 @@ used same code from cache memory and recognised the same existing layer, that's 
 see one image file even we use "docker build -t getting-started ." multiple times.
 ```
 
+<b>Question 4:</b>
+``` bash
+"-d" flag stands for detached mode, which means container gonna run in backgound without being attached to 
+terminal. This mode is useful for servies which don't need user interaction and keep on running in background.
+
+"-p" flag stands for port mapping, which connects localhost port's with container's port. This is very fruitful 
+while running multiple containers to avoid conflict between them.
+
+When we ran the command "docker run -p 1000:3000 getting-started" the output is embeded in following which states 
+instead of running process in background now its running in foreground.
+
+parav@LAPTOP-IUCQG101 MINGW64 /e/SEM 5/CSN400/Azure/CP5/dockerworkfolder/getting-started/app (master)
+$ docker run -p 1000:3000 getting-started
+Using sqlite database at /etc/todos/todo.db
+Listening on port 3000
+
+```
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
