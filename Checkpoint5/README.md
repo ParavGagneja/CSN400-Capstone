@@ -15,7 +15,7 @@
 
 ### Part A - Containerize an application
 <b>Question 1:</b>
-```
+``` 
 So, when we ran `docker build -t getting-started .` second time, the build time was less as docker 
 had a built-in cache memory which was created while creating the image first time, second time docker 
 just processed those steps back which causes less steps and less time but if any modification would be 
@@ -23,6 +23,10 @@ done at any step then docker has to create steps again.
 ```
 <b>Question 2:</b>
 ``` bash
+Answer: The argument "-t" is used to display tag on image, this tag can be verified using command "docker image ls".
+if the argument "-t" is missing this error will pop-up, which means command need the
+argument
+ 
 parav@LAPTOP-IUCQG101 MINGW64 /e/SEM 5/CSN400/Azure/CP5/dockerworkfolder/getting-started/app (master)
 $ docker build getting-started .
 ERROR: "docker buildx build" requires exactly 1 argument.
@@ -32,6 +36,7 @@ Usage:  docker buildx build [OPTIONS] PATH | URL | -
 
 Start a build
 ```
+
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
