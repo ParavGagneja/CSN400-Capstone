@@ -95,13 +95,17 @@ $ docker run -dp 3000:3000 getting-started
 docker: Error response from daemon: driver failed programming external connectivity on endpoint cool_jones (95961dc7f94266ffb61356f3baaa54bf935b5fb3062e2635082156e9a984a00d): Bind for 0.0.0.0:3000 failed: port is already allocated.
 
 The reason behind this error is, as when we created our first container we allocated port 3000 to it but now
-we are trying to run another container with same port which cause this conflict.
+we are trying to run another container with same port which cause this conflict. To resolve this error we deleted 
+container associated with port 3000 to make it available and then allocated that to our new container.
 ```
 
 <b>Question 9:</b>
-```
 
-```
+<img src="application_updated.jpg"
+     alt="Repository Collaboration Image"
+     title="Repository Collaboration"
+     style="float: left; margin-right: 10px;" />
+
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
