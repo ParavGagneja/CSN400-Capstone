@@ -70,8 +70,15 @@ this means port 1000 in localhost must be used to reach container.
 ```
 
 <b>Question 6:</b>
-```
+``` bash
+parav@LAPTOP-IUCQG101 MINGW64 /e/SEM 5/CSN400/Azure/CP5/dockerworkfolder/getting-started/app (master)
+$ docker ps
+CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS          PORTS                    NAMES
+c3b59c5b3379   getting-started   "docker-entrypoint.s…"   6 seconds ago    Up 5 seconds    0.0.0.0:1000->3000/tcp   nice_varahamihira
+88c44be2c37c   getting-started   "docker-entrypoint.s…"   53 minutes ago   Up 53 minutes   0.0.0.0:3000->3000/tcp   hopeful_bouman
 
+The Difference between two containers is one is running in front and other in front, which mean if I close the IDE the front
+container with hostport 1000 will stop working but the container with host port 3000 running in back will keep working.
 ```
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
