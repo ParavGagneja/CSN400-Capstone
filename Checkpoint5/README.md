@@ -12,8 +12,8 @@
     - [Table of Contents](#table-of-contents)
     - [Part A - Containerize an application](#part-a---containerize-an-application)
     - [Part B - Share the application](#part-b---share-the-application)
-    - [Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.](#part-c---persist-the-db-follow-the-instructions-and-embed-outputs-of-the-commands-asked-for)
-    - [Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.](#part-d---multi-container-apps-follow-the-instructions-and-and-embed-outputs-of-the-commands-asked-for)
+    - [Part C - Persist the DB](#part-c---persist-the-db)
+    - [Part D - Multi container apps](#part-d---multi-container-apps)
 
 ### Part A - Containerize an application
 <b>Question 1:</b>
@@ -144,5 +144,20 @@ container associated with port 3000 to make it available and then allocated that
      alt="app running"
      style="float: left; margin-right: 10px;" />
      
-### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
-### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
+### Part C - Persist the DB
+
+``` bash
+root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP5/dockerworkfolder/getting-started/app# docker volume inspect todo-db
+[
+    {
+        "CreatedAt": "2023-06-15T21:31:01Z",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/todo-db/_data",
+        "Name": "todo-db",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+```
+### Part D - Multi container apps
