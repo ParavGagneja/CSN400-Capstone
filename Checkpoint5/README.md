@@ -86,6 +86,22 @@ container with hostport 1000 will stop working but the container with host port 
 It took 10.8 seconds to create the image after updating the code. It is shorter incomparison to the first because
 docker created image from the step the file was modified but the rest was same in cache, that's why it was faster.
 ```
+
+<b>Question 8:</b>
+``` bash
+parav@LAPTOP-IUCQG101 MINGW64 /e/SEM 5/CSN400/Azure/CP5/dockerworkfolder/getting-started/app (master)
+$ docker run -dp 3000:3000 getting-started
+9c2e5ff43d5bf0aedb95a9115b023bd9140d364e809904fe68205346b3360b44
+docker: Error response from daemon: driver failed programming external connectivity on endpoint cool_jones (95961dc7f94266ffb61356f3baaa54bf935b5fb3062e2635082156e9a984a00d): Bind for 0.0.0.0:3000 failed: port is already allocated.
+
+The reason behind this error is, as when we created our first container we allocated port 3000 to it but now
+we are trying to run another container with same port which cause this conflict.
+```
+
+<b>Question 9:</b>
+```
+
+```
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
