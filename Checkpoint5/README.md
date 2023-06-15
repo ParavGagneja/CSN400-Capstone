@@ -80,6 +80,12 @@ c3b59c5b3379   getting-started   "docker-entrypoint.s…"   6 seconds ago    Up 
 The Difference between two containers is one is running in front and other in front, which mean if I close the IDE the front
 container with hostport 1000 will stop working but the container with host port 3000 running in back will keep working.
 ```
+
+<b>Question 7:</b>
+```
+It took 10.8 seconds to create the image after updating the code. It is shorter incomparison to the first because
+docker created image from the step the file was modified but the rest was same in cache, that's why it was faster.
+```
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
