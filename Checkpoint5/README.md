@@ -132,6 +132,17 @@ container associated with port 3000 to make it available and then allocated that
      alt="ADDed NEW INSTANCE"
      style="float: left; margin-right: 10px;" />
 
+`Freshly pushed app`
+
+<img src="images/2.5.jpg"
+     alt="Freshly pushed app"
+     style="float: left; margin-right: 10px;" />
+
+`App Running`
+
+<img src="images/2.6.jpg"
+     alt="app running"
+     style="float: left; margin-right: 10px;" />
      
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
