@@ -37,6 +37,14 @@ Usage:  docker buildx build [OPTIONS] PATH | URL | -
 Start a build
 ```
 
+<b>Question 3:</b>
+``` 
+Docker uses layered architecture model which means whenever we create an image or modify image it just
+add a new layer to it to reduce duplication, so when we used same command without modification docker 
+used same code from cache memory and recognised the same existing layer, that's why we are only able to 
+see one image file even we use "docker build -t getting-started ." multiple times.
+```
+
 ### Part B - Share the application: Follow the instructions and submit the screenshots.
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
