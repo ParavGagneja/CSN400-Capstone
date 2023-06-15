@@ -161,3 +161,23 @@ root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP5/dockerworkfolder/getting-star
 ]
 ```
 ### Part D - Multi container apps
+
+``` bash
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| todos              |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql>
+```
+
+``` bash
+
+```
