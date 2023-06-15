@@ -14,7 +14,13 @@
 4. [Part D - Multi container apps](#part-d---multi-container-apps)
 
 ### Part A - Containerize an application
-Question 1:
+<b>Question 1:</b>
+```
+So, when we ran `docker build -t getting-started .` second time, the build time was less as docker 
+had a built-in cache memory which was created while creating the image first time, second time docker 
+just processed those steps back which causes less steps and less time but if any modification would be 
+done at any step then docker has to create steps again. 
+```
 <b>Question 2:</b>
 ``` bash
 parav@LAPTOP-IUCQG101 MINGW64 /e/SEM 5/CSN400/Azure/CP5/dockerworkfolder/getting-started/app (master)
