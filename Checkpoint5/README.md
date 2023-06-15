@@ -105,7 +105,6 @@ container associated with port 3000 to make it available and then allocated that
 
 <img src="images/application_updated.jpg"
      alt="Repository Collaboration Image"
-     title="Repository Collaboration"
      style="float: left; margin-right: 10px;" />
 
 ### Part B - Share the application
@@ -113,8 +112,14 @@ container associated with port 3000 to make it available and then allocated that
 
 <img src="images/2.1.jpg"
      alt="Repository Creating"
-     title="Repository Collaboration"
      style="float: left; margin-right: 10px;" />
+
+`Push Command Failed`
+
+<img src="images/2.2.jpg"
+     alt="Failed Push Command"
+     style="float: left; margin-right: 10px;" />
+
      
 ### Part C - Persist the DB: Follow the instructions and embed outputs of the commands asked for.
 ### Part D - Multi container apps: Follow the instructions and and embed outputs of the commands asked for.
