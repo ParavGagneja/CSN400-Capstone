@@ -711,3 +711,15 @@ WS-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
 ``` bash
 root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Public/CP6-Scripts/bash-scripts# az resource show --name WC-23 --resource-group "Student-RG-954636" --resource-type Microsoft.Compute/virtualMachines --output json > WC-23-details.json
 ```
+<b>List all NSG using az list command and the output in table format</b>
+
+`Command used: az network nsg list --output table > nsg_list.tbl`
+
+``` bash
+Location    Name       ProvisioningState    ResourceGroup      ResourceGuid
+----------  ---------  -------------------  -----------------  ------------------------------------
+canadaeast  LR-NSG-23  Succeeded            Student-RG-954636  c0d34bc2-5b2a-4106-b74a-58680573895c
+canadaeast  LS-NSG-23  Succeeded            Student-RG-954636  227f2a65-e6e8-4a39-868d-02b30c71698a
+canadaeast  WC-NSG-23  Succeeded            Student-RG-954636  1197b518-9e42-4504-86b1-ef2048a3f949
+canadaeast  WS-NSG-23  Succeeded            Student-RG-954636  15465c85-3bd0-43c6-84d2-542553e487b3
+```
