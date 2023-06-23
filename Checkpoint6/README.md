@@ -679,5 +679,15 @@ root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Pu
   "type": "Microsoft.Network/virtualNetworks/subnets"
 }
 ```
+
+<b>details of Router-23 subnet SN1 using az show and query it for details of subnet and route associations</b>
+
+``` bash
+root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Public/CP6-Scripts/bash-scripts# az network vnet subnet show --resource-group "Student-RG-954636" --vnet-name "Router-23" --name "SN1" --query '{ subnet: name, routeAssociations: routeTable.routeAssociations }' --output json
+{
+  "routeAssociations": null,
+  "subnet": "SN1"
+}
+```
 3. Part C - Network Review Questions: Answer all the questions, include images if you need.
 4. Part D - Creating Virtual Machines: Links to all files you created in this part, also embed the output of  Working with CLI Bash commands that show your resource list in table format.
