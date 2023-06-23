@@ -731,3 +731,7 @@ root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Pu
 
 root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Public/CP6-Scripts/bash-scripts# 
 ```
+
+<img src="auto_shut.jpg"
+     alt="autoshutdown configuration"
+     style="float: left; margin-right: 10px;" />
