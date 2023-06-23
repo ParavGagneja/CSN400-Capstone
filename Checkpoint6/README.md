@@ -12,6 +12,7 @@
     - [Table of Contents](#table-of-contents)
     - [Part A - Creating Network Resources using Azure CLI](#part-a---creating-network-resources-using-azure-cli)
     - [Part B -  Working with Azure CLI Bash](#part-b----working-with-azure-cli-bash)
+    - [Part D - Creating Virtual Machines](#part-d---creating-virtual-machines)
 
 
 ### Part A - Creating Network Resources using Azure CLI
@@ -690,4 +691,23 @@ root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Pu
 }
 ```
 3. Part C - Network Review Questions: Answer all the questions, include images if you need.
-4. Part D - Creating Virtual Machines: Links to all files you created in this part, also embed the output of  Working with CLI Bash commands that show your resource list in table format.
+### Part D - Creating Virtual Machines
+
+<b>List all VMs and the output in table format</b>
+
+`Command used: az vm list --output table --query "[].{Name:name, ResourceGroup:resourceGroup, Location:location, Size:hardwareProfile.vmSize, ProvisioningState:provisioningState}" > vm_list.tbl `
+
+``` bash
+Name    ResourceGroup      Location    Size           ProvisioningState
+------  -----------------  ----------  -------------  -------------------
+LR-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
+LS-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
+WC-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
+WS-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
+```
+
+<b>details of WC-23 using az show command and the output in json</b>
+
+``` bash
+root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Public/CP6-Scripts/bash-scripts# az resource show --name WC-23 --resource-group "Student-RG-954636" --resource-type Microsoft.Compute/virtualMachines --output json > WC-23-details.json
+```
