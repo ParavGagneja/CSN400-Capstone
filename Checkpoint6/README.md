@@ -218,6 +218,15 @@ root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Pu
 }
 ```
 
+<b>List all peerings using az network vnet peering list command and the output in table format</b>
+``` bash
+AllowForwardedTraffic    AllowGatewayTransit    AllowVirtualNetworkAccess    DoNotVerifyRemoteGateways    Name                   PeeringState    PeeringSyncLevel    ProvisioningState    ResourceGroup      ResourceGuid                          UseRemoteGateways
+-----------------------  ---------------------  ---------------------------  ---------------------------  ---------------------  --------------  ------------------  -------------------  -----------------  ------------------------------------  -------------------
+True                     False                  True                         False                        Student-Bastion954636  Connected       FullyInSync         Succeeded            Student-RG-954636  87d9d783-844f-0ddb-1bda-727bc610b813  False
+True                     False                  True                         False                        StudenttoRouter        Connected       FullyInSync         Succeeded            Student-RG-954636  5b5e17ab-4224-0f66-2984-1f1eee5c3ed0  False
+
+```
+
 <b>details of Router-23 subnet SN1 using az show and query it for details of subnet and route associations</b>
 
 ``` bash
@@ -227,6 +236,15 @@ root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Pu
   "subnet": "SN1"
 }
 ```
+
+<b>List all routes in RT-23 using az network route-table route list command and output in table format</b>
+``` bash
+AddressPrefix    HasBgpOverride    Name              NextHopIpAddress    NextHopType       ProvisioningState    ResourceGroup
+---------------  ----------------  ----------------  ------------------  ----------------  -------------------  -----------------
+172.17.23.32/27  False             Route-to-Server   192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
+10.36.199.0/24   False             Route-to-Desktop  192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
+```
+
 3. Part C - Network Review Questions: Answer all the questions, include images if you need.
 ### Part D - Creating Virtual Machines
 

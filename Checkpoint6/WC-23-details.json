@@ -1,0 +1,73 @@
+{
+  "extendedLocation": null,
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Compute/virtualMachines/WC-23",
+  "identity": null,
+  "kind": null,
+  "location": "canadaeast",
+  "managedBy": null,
+  "name": "WC-23",
+  "plan": null,
+  "properties": {
+    "hardwareProfile": {
+      "vmSize": "Standard_B2ms"
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/networkInterfaces/wc-23",
+          "properties": {
+            "primary": true
+          },
+          "resourceGroup": "Student-RG-954636"
+        }
+      ]
+    },
+    "osProfile": {
+      "adminUsername": "pgagneja",
+      "allowExtensionOperations": true,
+      "computerName": "WC-23",
+      "requireGuestProvisionSignal": true,
+      "secrets": [],
+      "windowsConfiguration": {
+        "enableAutomaticUpdates": true,
+        "enableVMAgentPlatformUpdates": false,
+        "patchSettings": {
+          "assessmentMode": "ImageDefault",
+          "patchMode": "AutomaticByOS"
+        },
+        "provisionVMAgent": true
+      }
+    },
+    "provisioningState": "Succeeded",
+    "storageProfile": {
+      "dataDisks": [],
+      "diskControllerType": "SCSI",
+      "imageReference": {
+        "exactVersion": "19044.3086.230621",
+        "offer": "Windows-10",
+        "publisher": "MicrosoftWindowsDesktop",
+        "sku": "win10-21h2-pro-g2",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "deleteOption": "Detach",
+        "diskSizeGB": 127,
+        "managedDisk": {
+          "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Compute/disks/WC-23_disk1_6884232cf0b5457d9d299d0c82794598",
+          "resourceGroup": "Student-RG-954636",
+          "storageAccountType": "StandardSSD_LRS"
+        },
+        "name": "WC-23_disk1_6884232cf0b5457d9d299d0c82794598",
+        "osType": "Windows"
+      }
+    },
+    "timeCreated": "2023-06-23T21:49:49.3956556+00:00",
+    "vmId": "7157f356-1fd4-498b-ab41-bc88ddda40c4"
+  },
+  "resourceGroup": "Student-RG-954636",
+  "sku": null,
+  "tags": {},
+  "type": "Microsoft.Compute/virtualMachines"
+}
