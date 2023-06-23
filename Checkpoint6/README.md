@@ -655,6 +655,30 @@ Route Table and Routes created without error!
 END!
 ---------------------------------------------------
 ```
+<b>Question 1</b>
+
+``` bash
+In network_config_test.sh "if [[ ! $(az group list -o tsv --query "[?name=='$RG_NAME']") ]]" checks for resource group if that exists 
+or not as az group list extract the list of groups which exist on azure and query is used to check for specific group.
+```
+<b>Question 2</b>
+``` bash
+It is crucial to check if a resource exist before creating it to avoid duplication conflicts. if a resource is created again it may overwrite the existing one which might result in creating issues with exisitng environment.
+
+syntax used:
+echo "Check if it already exists ---"
+if [[ $(az network vnet list -g $RG_NAME -o tsv --query "[?name=='$vnet']") ]]
+then
+      echo "exists!"
+      az network vnet show -g $RG_NAME --name $vnet --query id 
+else
+   echo "doesn't exist!"
+
+
+To check if a vnet exist is vnet_create.sh use above syntax and replace value of '$vnet' with the name of you want to check for
+if it exists, then after running command it will show "exists!"
+```
+
 
 
 ### Part B -  Working with Azure CLI Bash
