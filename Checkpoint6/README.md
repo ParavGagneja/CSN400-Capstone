@@ -157,7 +157,42 @@ Azure CLI command to create vnet:
 
 Other optional parameters could be "subnet-name" or "subnet-prefixes".
 ```
+<b>Question4</b>
+``` bash
+The Azure CLI command to create a subnet is "az network vnet subnet create".
 
+ echo "Creating Subnets ---"
+         for item in "${subnet_list[@]}"
+         do
+            if [[ ${item:0:2} == "SN" ]]
+            then
+               subnet_name=$item
+            else
+               address_prefix=$item
+               echo
+               echo "Check if subnet $subnet_name: $subnet_prefix already exists ---"
+               if [[ $(az network vnet subnet list -g $RG_NAME --vnet-name $vnet -o tsv --query "[?name=='$subnet_name']") ]]
+               then
+                  echo "exists!"
+                  az network vnet subnet show -g $RG_NAME --vnet-name $vnet --name $subnet_name -o tsv --query id 
+               else
+                  echo "doesn't exist!"
+                  echo "Creating Subnet ---"
+                  az network vnet subnet create --name $subnet_name \
+                        -g $RG_NAME \
+                        --vnet-name $vnet \
+                        --address-prefix $address_prefix
+                  if [[ $(az network vnet subnet list -g $RG_NAME --vnet-name $vnet -o tsv --query "[?name=='$subnet_name']") ]]
+                     then
+                        echo "Completed!"
+                        echo "Created with id:"
+                        az network vnet subnet show -g $RG_NAME --vnet-name $vnet --name $subnet_name --query id
+                     else
+                        echo "Failed resource creation, program will abort now!!"
+                        exit 3
+
+Optional parameters could be "network-security-group", "route-table" or " service-endpoints".
+```
 
 ### Part B -  Working with Azure CLI Bash
 
