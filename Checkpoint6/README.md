@@ -10,10 +10,11 @@
 
 - [Checkpoint6 Submission](#checkpoint6-submission)
     - [Table of Contents](#table-of-contents)
-    - [Part A - Creating Network Resources using Azure CLI: Links to all files you created in this part, also embed the output of  Working with Azure CLI Bash commands that show your resource list in table format.](#part-a---creating-network-resources-using-azure-cli-links-to-all-files-you-created-in-this-part-also-embed-the-output-of--working-with-azure-cli-bash-commands-that-show-your-resource-list-in-table-format)
+    - [Part A - Creating Network Resources using Azure CLI](#part-a---creating-network-resources-using-azure-cli)
+    - [Part B -  Working with Azure CLI Bash](#part-b----working-with-azure-cli-bash)
 
 
-### Part A - Creating Network Resources using Azure CLI: Links to all files you created in this part, also embed the output of  Working with Azure CLI Bash commands that show your resource list in table format.
+### Part A - Creating Network Resources using Azure CLI
 
 ``` bash 
 Lines Updated in network_config.sh
@@ -654,6 +655,29 @@ END!
 ---------------------------------------------------
 ```
 
-2. Part B -  Working with Azure CLI Bash: Links to all files you created in this part, also embed the output of  Working with Azure CLI Bash commands that show your resource list in table format.
+
+### Part B -  Working with Azure CLI Bash
+
+<b>details of default student vnet</b>
+
+``` bash
+root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Public/CP6-Scripts/bash-scripts# az network vnet subnet show -g "Student-RG-954636" -n "Virtual-Desktop-Client" --vnet-name "Student-954636-vnet"
+{
+  "addressPrefix": "10.36.199.0/24",
+  "delegations": [],
+  "etag": "W/\"1664886b-ed35-4613-a629-0f8cb6b4726c\"",
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/virtualNetworks/Student-954636-vnet/subnets/Virtual-Desktop-Client",
+  "name": "Virtual-Desktop-Client",
+  "privateEndpointNetworkPolicies": "Enabled",
+  "privateLinkServiceNetworkPolicies": "Enabled",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-954636",
+  "routeTable": {
+    "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/routeTables/RT-23",
+    "resourceGroup": "Student-RG-954636"
+  },
+  "type": "Microsoft.Network/virtualNetworks/subnets"
+}
+```
 3. Part C - Network Review Questions: Answer all the questions, include images if you need.
 4. Part D - Creating Virtual Machines: Links to all files you created in this part, also embed the output of  Working with CLI Bash commands that show your resource list in table format.
