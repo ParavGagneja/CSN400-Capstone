@@ -145,7 +145,18 @@ else
 To check if a vnet exist is vnet_create.sh use above syntax and replace value of '$vnet' with the name of you want to check for
 if it exists, then after running command it will show "exists!"
 ```
+<b>Question3</b>
+``` bash
+The Azure CLI command to create a VNet is "az network vnet create".
 
+Azure CLI command to create vnet:
+ az network vnet create -g $RG_NAME \
+            --name $vnet \
+            --location $LOCATION \
+            --address-prefix $address_prefix
+
+Other optional parameters could be "subnet-name" or "subnet-prefixes".
+```
 
 
 ### Part B -  Working with Azure CLI Bash
