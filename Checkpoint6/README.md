@@ -527,8 +527,132 @@ Networking backend created without error!
 END!
 ---------------------------------------------------
 ```
+<b>Output of route_table_create.sh</b>
+
+``` bash
+root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Public/CP6-Scripts/bash-scripts# ./route_table_create.sh
 
 
+---------------------------------------------------
+---------------------------------------------------
+
+    ____  ___                __    __
+    |     |__   |\ |  |_|   |  |  |  |
+    |___   __|  | \|    |   |__|  |__|
+
+---------------------------------------------------
+---------------------------------------------------
+
+Loading variables:
+network_config.sh
+Loaded variabes without error
+
+---------------------------------------------------
+Route Table: RT-23
+---------------------------------------------------
+
+Check if it already exists ---
+doesn't exist!
+Do you want to create Route Table: RT-23? (yes/no)
+yes
+Creating Route Table ---
+{
+  "disableBgpRoutePropagation": false,
+  "etag": "W/\"ab644844-3d64-41a7-a892-ef1917dadf99\"",
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/routeTables/RT-23",       
+  "location": "canadaeast",
+  "name": "RT-23",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-954636",
+  "resourceGuid": "915695e3-668f-460e-a968-ab3691a589c4",
+  "routes": [],
+  "type": "Microsoft.Network/routeTables"
+}
+Completed!
+Created with id:
+/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/routeTables/RT-23
+
+---------------------------------------------------
+Do you want to create Routes? (yes/no)
+yes
+Creating Routes in Route Table:
+
+{
+  "addressPrefix": "172.17.23.32/27",
+  "etag": "W/\"35ffd872-2cff-480c-a0a1-7d66b790ab6c\"",
+  "hasBgpOverride": false,
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/routeTables/RT-23/routes/Route-to-Server",
+  "name": "Route-to-Server",
+  "nextHopIpAddress": "192.168.23.36",
+  "nextHopType": "VirtualAppliance",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-954636",
+  "type": "Microsoft.Network/routeTables/routes"
+}
+{
+  "addressPrefix": "10.36.199.0/24",
+  "etag": "W/\"3bc48844-16b5-4265-a43c-8388b36c4b29\"",
+  "hasBgpOverride": false,
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/routeTables/RT-23/routes/Route-to-Desktop",
+  "name": "Route-to-Desktop",
+  "nextHopIpAddress": "192.168.23.36",
+  "nextHopType": "VirtualAppliance",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-954636",
+  "type": "Microsoft.Network/routeTables/routes"
+}
+Netwrok Peerings created!
+Routes Created!
+Route List
+AddressPrefix    HasBgpOverride    Name              NextHopIpAddress    NextHopType       ProvisioningState    ResourceGroup
+---------------  ----------------  ----------------  ------------------  ----------------  -------------------  -----------------
+172.17.23.32/27  False             Route-to-Server   192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
+10.36.199.0/24   False             Route-to-Desktop  192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
+
+---------------------------------------------------
+Do you want to create Ruote Table Associations? (yes/no)
+yes
+Creating Subnet Associations to Route Table:
+
+{
+  "addressPrefix": "172.17.23.32/27",
+  "delegations": [],
+  "etag": "W/\"2908833e-8f24-496b-99ea-eebe1c80052a\"",
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/virtualNetworks/Server-23/subnets/SN1",
+  "name": "SN1",
+  "privateEndpointNetworkPolicies": "Disabled",
+  "privateLinkServiceNetworkPolicies": "Enabled",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-954636",
+  "routeTable": {
+    "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/routeTables/RT-23",     
+    "resourceGroup": "Student-RG-954636"
+  },
+  "type": "Microsoft.Network/virtualNetworks/subnets"
+}
+{
+  "addressPrefix": "10.36.199.0/24",
+  "delegations": [],
+  "etag": "W/\"1664886b-ed35-4613-a629-0f8cb6b4726c\"",
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/virtualNetworks/Student-954636-vnet/subnets/Virtual-Desktop-Client",
+  "name": "Virtual-Desktop-Client",
+  "privateEndpointNetworkPolicies": "Enabled",
+  "privateLinkServiceNetworkPolicies": "Enabled",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-954636",
+  "routeTable": {
+    "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/routeTables/RT-23",     
+    "resourceGroup": "Student-RG-954636"
+  },
+  "type": "Microsoft.Network/virtualNetworks/subnets"
+}
+Associations Created!
+
+---------------------------------------------------
+Route Table and Routes created without error!
+END!
+---------------------------------------------------
+```
 
 2. Part B -  Working with Azure CLI Bash: Links to all files you created in this part, also embed the output of  Working with Azure CLI Bash commands that show your resource list in table format.
 3. Part C - Network Review Questions: Answer all the questions, include images if you need.
