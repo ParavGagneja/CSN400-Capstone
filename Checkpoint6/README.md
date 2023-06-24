@@ -249,11 +249,18 @@ AddressPrefix    HasBgpOverride    Name              NextHopIpAddress    NextHop
 ### Part C - Network Review Questions
 
 <b>Question1</b>
-` Azure Virtual Network (VNET) is virtual networking service provided by azure to create private networks and to connect and isolate 
-resources like virtual machines.`
+
+``` bash
+ Azure Virtual Network (VNET) is virtual networking service provided by azure to create private networks and to connect and isolate 
+resources like virtual machines.
+```
 
 <b>Question2</b>
 
+``` bash
+ In the context of Hybrid Cloud architecture on-prem computers can access resources inside azure virtual network with the help 
+site-to-site VPN. This is the service which allows on-prem servers to connect to client computers by securing networks or other is Azure express route which means connecting on-prem with azure without having public address just by private network which decrease reductancy.
+```
 
 
 ### Part D - Creating Virtual Machines
