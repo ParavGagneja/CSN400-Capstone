@@ -262,6 +262,45 @@ resources like virtual machines.
 site-to-site VPN. This is the service which allows on-prem servers to connect to client computers by securing networks or other is Azure express route which means connecting on-prem with azure without having public address just by private network which decrease reductancy.
 ```
 
+<b>Question3</b>
+
+``` bash
+Benefits on Azure Virtual Networks:
+1. Scalibilty and flexibility: VNET resources can be increased or decreased depending on usage.
+2. Secure Connectivity: As azure provides site-to-site VPN or express route which surge the security with encryption and decryption 
+of data and reduce latency.
+3.Network Monitoring and Diagnostics: Azure provides comprehensive monitoring and diagnostics capabilities for VNETs. You can monitor network traffic, performance, and health. 
+```
+
+<b>Question4</b>
+
+``` bash
+Difference between Network Security Group (NSG) and Route-Tables:
+
+1. Network Security Group acts as virtual firewall and regulate network traffic whereas Route-Tables are used to manage routing
+   network traffic.
+
+2. NSG contains network interface and subnets which are used to create and manage inbound and outbound security rules, however
+   route tables contains collection of rules to determine how network traffic is directed.
+```
+
+<b>Question5</b>
+
+``` bash
+Difference between NSG and Firewalls:
+
+1. Network Security Group acts as virtual firewall and regulate network traffic but firewalls are security devices which protect 
+   whole network from threats and unauthorised access.
+
+2. NSGs are particularly for Azure and provide security within the Azure environment only whereas firewalls can be implemented on 
+   any cloud environment and on-premises.
+```
+
+<b>Question6</b>
+
+``` bash
+
+```
 
 ### Part D - Creating Virtual Machines
 
