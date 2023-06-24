@@ -251,15 +251,17 @@ AddressPrefix    HasBgpOverride    Name              NextHopIpAddress    NextHop
 <b>Question1</b>
 
 ``` bash
- Azure Virtual Network (VNET) is virtual networking service provided by azure to create private networks and to connect and isolate 
-resources like virtual machines.
+ Azure Virtual Network (VNET) is virtual networking service provided by azure to create private networks and to connect and 
+isolate resources like virtual machines.
 ```
 
 <b>Question2</b>
 
 ``` bash
- In the context of Hybrid Cloud architecture on-prem computers can access resources inside azure virtual network with the help 
-site-to-site VPN. This is the service which allows on-prem servers to connect to client computers by securing networks or other is Azure express route which means connecting on-prem with azure without having public address just by private network which decrease reductancy.
+In the context of Hybrid Cloud architecture on-prem computers can access resources inside azure virtual network with the 
+help site-to-site VPN. This is the service which allows on-prem servers to connect to client computers by securing networks 
+or other is Azure express route which means connecting on-prem with azure without having public address just by private network 
+which decrease reductancy.
 ```
 
 <b>Question3</b>
@@ -267,9 +269,10 @@ site-to-site VPN. This is the service which allows on-prem servers to connect to
 ``` bash
 Benefits on Azure Virtual Networks:
 1. Scalibilty and flexibility: VNET resources can be increased or decreased depending on usage.
-2. Secure Connectivity: As azure provides site-to-site VPN or express route which surge the security with encryption and decryption 
-of data and reduce latency.
-3.Network Monitoring and Diagnostics: Azure provides comprehensive monitoring and diagnostics capabilities for VNETs. You can monitor network traffic, performance, and health. 
+2. Secure Connectivity: As azure provides site-to-site VPN or express route which surge the security with encryption and 
+decryption of data and reduce latency.
+3.Network Monitoring and Diagnostics: Azure provides comprehensive monitoring and diagnostics capabilities for VNETs. You 
+can monitor network traffic, performance, and health. 
 ```
 
 <b>Question4</b>
@@ -277,11 +280,11 @@ of data and reduce latency.
 ``` bash
 Difference between Network Security Group (NSG) and Route-Tables:
 
-1. Network Security Group acts as virtual firewall and regulate network traffic whereas Route-Tables are used to manage routing
-   network traffic.
+1. Network Security Group acts as virtual firewall and regulate network traffic whereas Route-Tables are used to manage 
+routing network traffic.
 
-2. NSG contains network interface and subnets which are used to create and manage inbound and outbound security rules, however
-   route tables contains collection of rules to determine how network traffic is directed.
+2. NSG contains network interface and subnets which are used to create and manage inbound and outbound security rules, 
+however route tables contains collection of rules to determine how network traffic is directed.
 ```
 
 <b>Question5</b>
@@ -289,17 +292,18 @@ Difference between Network Security Group (NSG) and Route-Tables:
 ``` bash
 Difference between NSG and Firewalls:
 
-1. Network Security Group acts as virtual firewall and regulate network traffic but firewalls are security devices which protect 
-   whole network from threats and unauthorised access.
+1. Network Security Group acts as virtual firewall and regulate network traffic but firewalls are security devices which 
+protect whole network from threats and unauthorised access.
 
-2. NSGs are particularly for Azure and provide security within the Azure environment only whereas firewalls can be implemented on 
-   any cloud environment and on-premises.
+2. NSGs are particularly for Azure and provide security within the Azure environment only whereas firewalls can be implemented
+ on any cloud environment and on-premises.
 ```
 
 <b>Question6</b>
 
 ``` bash
-The hub-and-spoke architecture consists of up of a central hub which links to multiple spoke networks. The spoke networks are connected to the central hub, which operates as the center for network traffic in this structure.
+The hub-and-spoke architecture consists of up of a central hub which links to multiple spoke networks. 
+The spoke networks are connected to the central hub, which operates as the center for network traffic in this structure.
 
 In Azure, hub-and-spoke architecture can be deployed using VNets and Network Peering.
 ```
@@ -307,13 +311,16 @@ In Azure, hub-and-spoke architecture can be deployed using VNets and Network Pee
 <b>Question7</b>
 
 ``` bash
-we don't always need to specify a gateway when creating an azure vnet to manage traffic between subnets under the same VNET. Azure by default manages traffic between subnets inside a VNET using a built-in system routing table.
+we don't always need to specify a gateway when creating an azure vnet to manage traffic between subnets under the same VNET.
+Azure by default manages traffic between subnets inside a VNET using a built-in system routing table.
 ```
 
 <b>Question8</b>
 
 ``` bash
-
+Virtual Network gateways are used to connect different networks and establishing secure connection among them. They can be used
+between vnet-to-vnet or site-to-site. It can also be used to securely connect indiviual devices to vnet securely. This allows 
+remote users to access resources through a secure channel safely.
 ```
 
 ### Part D - Creating Virtual Machines
