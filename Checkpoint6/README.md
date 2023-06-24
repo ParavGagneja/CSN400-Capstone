@@ -264,7 +264,7 @@ WS-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
 <b>details of WC-23 using az show command and the output in json</b>
 
 ``` bash
-root@LAPTOP-IUCQG101:/mnt/e/SEM 5/CSN400/Azure/CP6/Workfolder/CSN400-Capstone-Public/CP6-Scripts/bash-scripts# az resource show --name WC-23 --resource-group "Student-RG-954636" --resource-type Microsoft.Compute/virtualMachines --output json > WC-23-details.json
+Command used: az resource show --name WC-23 --resource-group "Student-RG-954636" --resource-type Microsoft.Compute/virtualMachines --output json > WC-23-details.json
 ```
 <b>List all NSG using az list command and the output in table format</b>
 

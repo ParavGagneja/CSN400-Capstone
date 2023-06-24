@@ -1,0 +1,6 @@
+Name    ResourceGroup      Location    Size           ProvisioningState
+------  -----------------  ----------  -------------  -------------------
+LR-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
+LS-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
+WC-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
+WS-23   STUDENT-RG-954636  canadaeast  Standard_B2ms  Succeeded
