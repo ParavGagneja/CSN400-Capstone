@@ -12,6 +12,7 @@
     - [Table of Contents](#table-of-contents)
     - [Part A - Creating Network Resources using Azure CLI](#part-a---creating-network-resources-using-azure-cli)
     - [Part B -  Working with Azure CLI Bash](#part-b----working-with-azure-cli-bash)
+    - [Part C - Network Review Questions](#part-c---network-review-questions)
     - [Part D - Creating Virtual Machines](#part-d---creating-virtual-machines)
 
 
@@ -245,7 +246,16 @@ AddressPrefix    HasBgpOverride    Name              NextHopIpAddress    NextHop
 10.36.199.0/24   False             Route-to-Desktop  192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
 ```
 
-3. Part C - Network Review Questions: Answer all the questions, include images if you need.
+### Part C - Network Review Questions
+
+<b>Question1</b>
+` Azure Virtual Network (VNET) is virtual networking service provided by azure to create private networks and to connect and isolate 
+resources like virtual machines.`
+
+<b>Question2</b>
+
+
+
 ### Part D - Creating Virtual Machines
 
 <b>List all VMs and the output in table format</b>
