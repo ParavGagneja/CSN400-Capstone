@@ -299,6 +299,20 @@ Difference between NSG and Firewalls:
 <b>Question6</b>
 
 ``` bash
+The hub-and-spoke architecture consists of up of a central hub which links to multiple spoke networks. The spoke networks are connected to the central hub, which operates as the center for network traffic in this structure.
+
+In Azure, hub-and-spoke architecture can be deployed using VNets and Network Peering.
+```
+
+<b>Question7</b>
+
+``` bash
+we don't always need to specify a gateway when creating an azure vnet to manage traffic between subnets under the same VNET. Azure by default manages traffic between subnets inside a VNET using a built-in system routing table.
+```
+
+<b>Question8</b>
+
+``` bash
 
 ```
 
