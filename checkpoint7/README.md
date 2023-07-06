@@ -119,4 +119,5 @@ true
 1. Command used to remove firewalld service:
    `sudo yum remove firewalld`
 
-2. 
+2. Command used  to check the status of iptabels:
+   `sudo systemctl status iptables`
