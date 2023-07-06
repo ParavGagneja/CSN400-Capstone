@@ -80,3 +80,36 @@ WS-23_OsDisk_1_c1e83f32a3e74c3c83e615162b51c3dd  Student-RG-954636  canadaeast  
 ```
 
 ### Part B - Basic Connectivity - VM Configuration
+``` bash
+1.az network nic ip-config show -g Student-RG-954636 -n ipconfig1 --nic-name lr-23458 --query "IpForwarding"
+
+
+odl_user [ ~ ]$ az network nic ip-config show -g Student-RG-954636 -n ipconfig1 --nic-name lr-23458
+{
+  "etag": "W/\"2031c632-315c-442f-94b1-2bbc821805fd\"",
+  "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/networkInterfaces/lr-23458/ipConfigurations/ipconfig1",
+  "name": "ipconfig1",
+  "primary": true,
+  "privateIPAddress": "192.168.23.36",
+  "privateIPAddressVersion": "IPv4",
+  "privateIPAllocationMethod": "Dynamic",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-954636",
+  "subnet": {
+    "id": "/subscriptions/bd627181-5ddb-4bb6-b03f-5297c3be4e1e/resourceGroups/Student-RG-954636/providers/Microsoft.Network/virtualNetworks/Router-23/subnets/SN1",
+    "resourceGroup": "Student-RG-954636"
+  },
+  "type": "Microsoft.Network/networkInterfaces/ipConfigurations"
+```
+
+``` bash
+2. 
+```
+
+
+``` bash
+3. az network nic show -g Student-RG-954636 -n lr-23458 --query "enableIPForwarding"
+
+odl_user [ ~ ]$ az network nic show -g Student-RG-954636 -n lr-23458 --query "enableIPForwarding"
+true
+```
