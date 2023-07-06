@@ -12,6 +12,7 @@
     - [Table of Contents](#table-of-contents)
     - [Part A - Creating \& Configuring VMs - Using Portal](#part-a---creating--configuring-vms---using-portal)
     - [Part B - Basic Connectivity - VM Configuration](#part-b---basic-connectivity---vm-configuration)
+    - [Part C - Basic Connectivity - VM Configuration](#part-c---basic-connectivity---vm-configuration)
 
 ### Part A - Creating & Configuring VMs - Using Portal
 
@@ -113,3 +114,9 @@ odl_user [ ~ ]$ az network nic ip-config show -g Student-RG-954636 -n ipconfig1 
 odl_user [ ~ ]$ az network nic show -g Student-RG-954636 -n lr-23458 --query "enableIPForwarding"
 true
 ```
+### Part C - Basic Connectivity - VM Configuration
+
+1. Command used to remove firewalld service:
+   `sudo yum remove firewalld`
+
+2. 
