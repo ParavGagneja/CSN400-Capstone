@@ -121,3 +121,39 @@ true
 
 2. Command used  to check the status of iptabels:
    `sudo systemctl status iptables`
+
+3.
+
+``` bash
+
+4. [pgagneja@LR-23 ~]$ sudo iptables -L --line
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination
+1    ACCEPT     all  --  anywhere             anywhere             state RELATED,ESTABLISHED
+2    ACCEPT     icmp --  anywhere             anywhere
+3    ACCEPT     all  --  anywhere             anywhere
+4    ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:ssh
+5    REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
+
+Chain FORWARD (policy ACCEPT)
+num  target     prot opt source               destination
+1    REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination
+[pgagneja@LR-23 ~]$ sudo iptables -L -v --line
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+1     1448  309K ACCEPT     all  --  any    any     anywhere             anywhere             state RELATED,ESTABLISHED
+2        0     0 ACCEPT     icmp --  any    any     anywhere             anywhere
+3        0     0 ACCEPT     all  --  lo     any     anywhere             anywhere
+4        0     0 ACCEPT     tcp  --  any    any     anywhere             anywhere             state NEW tcp dpt:ssh
+5        2   144 REJECT     all  --  any    any     anywhere             anywhere             reject-with icmp-host-prohibited
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+1        0     0 REJECT     all  --  any    any     anywhere             anywhere             reject-with icmp-host-prohibited
+
+Chain OUTPUT (policy ACCEPT 1834 packets, 422K bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+```
