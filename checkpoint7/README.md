@@ -13,6 +13,7 @@
     - [Part A - Creating \& Configuring VMs - Using Portal](#part-a---creating--configuring-vms---using-portal)
     - [Part B - Basic Connectivity - VM Configuration](#part-b---basic-connectivity---vm-configuration)
     - [Part C - Basic Connectivity - VM Configuration](#part-c---basic-connectivity---vm-configuration)
+    - [Part D - Creating \& Configuring VM Images - Using Portal](#part-d---creating--configuring-vm-images---using-portal)
     - [Part E - Azure Cost Analysis Charts](#part-e---azure-cost-analysis-charts)
     - [Part F - Create Customized Azure Dashboard](#part-f---create-customized-azure-dashboard)
 
