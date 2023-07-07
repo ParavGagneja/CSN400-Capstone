@@ -104,7 +104,7 @@ odl_user [ ~ ]$ az network nic ip-config show -g Student-RG-954636 -n ipconfig1 
 ```
 
 ``` bash
-2. 
+2. "enableIPForwarding": true,
 ```
 
 
