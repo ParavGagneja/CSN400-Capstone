@@ -13,6 +13,7 @@
     - [Part A - Creating \& Configuring VMs - Using Portal](#part-a---creating--configuring-vms---using-portal)
     - [Part B - Basic Connectivity - VM Configuration](#part-b---basic-connectivity---vm-configuration)
     - [Part C - Basic Connectivity - VM Configuration](#part-c---basic-connectivity---vm-configuration)
+    - [Part F - Create Customized Azure Dashboard](#part-f---create-customized-azure-dashboard)
 
 ### Part A - Creating & Configuring VMs - Using Portal
 
@@ -213,3 +214,9 @@ odl_user [ ~ ]$ az vm list --output table
 
 odl_user [ ~ ]$ 
 ```
+
+### Part F - Create Customized Azure Dashboard
+
+<img src="images/Dashboard.jpg"
+     alt="Dashboard Image"
+     style="float: left; margin-right: 10px;" />
