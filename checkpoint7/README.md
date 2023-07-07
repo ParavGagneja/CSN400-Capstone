@@ -125,7 +125,10 @@ true
 2. Command used  to check the status of iptabels:
    `sudo systemctl status iptables`
 
-3.
+3. To make iptable rules presistent we use file /etc/sysconfig/iptables
+ and can be done using following command:
+ sudo iptables-save > /etc/sysconfig/iptables  
+   
 
 ``` bash
 
@@ -159,6 +162,8 @@ num   pkts bytes target     prot opt in     out     source               destina
 
 Chain OUTPUT (policy ACCEPT 1834 packets, 422K bytes)
 num   pkts bytes target     prot opt in     out     source               destination
+
+System security can be improved by restricting connections, by applying REJECT or DROP policy or and using NSG.
 ```
 
 
@@ -218,7 +223,7 @@ odl_user [ ~ ]$
 
 ``` bash
 
-In recreating virtual machines from images it took almost 5-10 minutes and then establishing the connectivity like ssh it took 10 additional minutes. Using automation we can do this more efficiently, for automation we can consider scripts.
+3. In recreating virtual machines from images it took almost 5-10 minutes and then establishing the connectivity like ssh it took 10 additional minutes. Using automation we can do this more efficiently, for automation we can consider scripts.
 ```
 
 ### Part E - Azure Cost Analysis Charts
