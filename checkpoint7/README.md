@@ -114,6 +114,7 @@ odl_user [ ~ ]$ az network nic ip-config show -g Student-RG-954636 -n ipconfig1 
 odl_user [ ~ ]$ az network nic show -g Student-RG-954636 -n lr-23458 --query "enableIPForwarding"
 true
 ```
+
 ### Part C - Basic Connectivity - VM Configuration
 
 1. Command used to remove firewalld service:
@@ -157,3 +158,49 @@ num   pkts bytes target     prot opt in     out     source               destina
 Chain OUTPUT (policy ACCEPT 1834 packets, 422K bytes)
 num   pkts bytes target     prot opt in     out     source               destination
 ```
+
+
+5. `LR-23: sudo hostnamectl status:`
+   ``` bash
+   pgagneja@LR-23.CSN4002234.com:~$ sudo hostnamectl status
+   Static hostname: LR-23.CSN4002234.com
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: 453c95589ac44adfa31654d4a34fb87f
+           Boot ID: cdf20b6544294b4b805d765b7c7a7234
+    Virtualization: microsoft
+    Operating System: Red Hat Enterprise Linux 8.7 (Ootpa)
+       CPE OS Name: cpe:/o:redhat:enterprise_linux:8::baseos
+            Kernel: Linux 4.18.0-425.13.1.el8_7.x86_64
+      Architecture: x86-64
+    ```
+
+
+    `LS-23: sudo hostnamectl status:`
+    ``` bash
+    pgagneja@LS-23.CSN4002234.com:~$ sudo hostnamectl status
+   Static hostname: LS-23.CSN4002234.com
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: 453c95589ac44adfa31654d4a34fb87f
+           Boot ID: 7e4e6604ceed48a292ee3eb9f03fca2d
+    Virtualization: microsoft
+    Operating System: Red Hat Enterprise Linux 8.7 (Ootpa)
+       CPE OS Name: cpe:/o:redhat:enterprise_linux:8::baseos
+            Kernel: Linux 4.18.0-425.13.1.el8_7.x86_64
+      Architecture: x86-64
+    ```
+
+### Part D - Creating & Configuring VM Images - Using Portal
+1. `command in CLI that lists all your Custom Images`
+   
+``` bash
+odl_user [ ~ ]$ az image list --output table
+HyperVGeneration    Location    Name             ProvisioningState    ResourceGroup
+------------------  ----------  ---------------  -------------------  -----------------
+V2                  canadaeast  lr-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  ls-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  wc-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  ws-23-ver-0.0.1  Succeeded            STUDENT-RG-954636   
+```
+
