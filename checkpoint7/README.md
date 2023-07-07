@@ -18,8 +18,13 @@
 
 ### Part A - Creating & Configuring VMs - Using Portal
 
+1.  Difference between Windows machine NSG and Linux machine NSG rules is in protocols.
+   we typically need rule for RDP but for ssh we need NSG rule. if we delete specific ssh and rdp rule then the connection would 
+   not remain established.
+
+
 ``` bash
-az group list -out table
+2.az group list -out table
 
 
 odl_user [ ~ ]$ az group list --output table
