@@ -192,7 +192,7 @@ num   pkts bytes target     prot opt in     out     source               destina
     ```
 
 ### Part D - Creating & Configuring VM Images - Using Portal
-1. `command in CLI that lists all your Custom Images`
+1. `Command in CLI that lists all Custom Images`
    
 ``` bash
 odl_user [ ~ ]$ az image list --output table
@@ -204,3 +204,12 @@ V2                  canadaeast  wc-23-ver-0.0.1  Succeeded            STUDENT-RG
 V2                  canadaeast  ws-23-ver-0.0.1  Succeeded            STUDENT-RG-954636   
 ```
 
+2. `Command in CLI that lists all VMs`
+   
+``` bash
+as while creating images we selected the option "Automatically delete this virtual machine after creating the image"
+
+odl_user [ ~ ]$ az vm list --output table
+
+odl_user [ ~ ]$ 
+```
