@@ -230,7 +230,8 @@ odl_user [ ~ ]$
 
 ``` bash
 
-3. In recreating virtual machines from images it took almost 5-10 minutes and then establishing the connectivity like ssh it took 10 additional minutes. Using automation we can do this more efficiently, for automation we can consider scripts.
+3. In recreating virtual machines from images it took almost 5-10 minutes and then establishing the connectivity like ssh it took
+ 10 additional minutes. Using automation we can do this more efficiently, for automation we can consider scripts.
 ```
 
 ### Part E - Azure Cost Analysis Charts
