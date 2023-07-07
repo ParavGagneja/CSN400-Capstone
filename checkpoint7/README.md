@@ -206,6 +206,7 @@ System security can be improved by restricting connections, by applying REJECT o
     ```
 
 ### Part D - Creating & Configuring VM Images - Using Portal
+
 1. `Command in CLI that lists all Custom Images`
    
 ``` bash
@@ -250,4 +251,5 @@ odl_user [ ~ ]$
 
 <img src="images/Dashboard.jpg"
      alt="Dashboard Image"
+     title = "Dashboard Image"
      style="float: left; margin-right: 10px;" />
