@@ -92,6 +92,13 @@ V2                  canadaeast  wc-23-ver-7      Succeeded            STUDENT-RG
 V2                  canadaeast  ws-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
 V2                  canadaeast  ws-23-ver-7      Succeeded            STUDENT-RG-954636
 ```
+6. List of all the VMs after deleting all virtual machines:
+``` bash
+odl_user [ ~ ]$ az vm list --output table
+
+odl_user [ ~ ]$ 
+```
+
 
 ### Part B - Basic Connectivity - Linux VMs Firewall Setting
 
