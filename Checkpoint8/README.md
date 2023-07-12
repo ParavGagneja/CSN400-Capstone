@@ -222,3 +222,51 @@ LS-23
             Kernel: Linux 4.18.0-477.10.1.el8_8.x86_64
       Architecture: x86-64
 ```
+
+4. <b>lr_iptables</b>
+``` bash
+[pgagneja@LR-23 ~]$ sudo iptables -nvL
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+ 8424 1618K ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+    4   240 ACCEPT     icmp --  *      *       0.0.0.0/0            0.0.0.0/0
+    0     0 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0
+    3   156 ACCEPT     tcp  --  *      *       10.36.199.0/24       0.0.0.0/0            state NEW tcp dpt:22
+  175 33392 LOG        all  --  *      *       0.0.0.0/0            0.0.0.0/0            limit: avg 10/sec burst 5 LOG flags 0 level 4 prefix "TO_DROP_INPUT"
+  175 33392 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+   58  5845 ACCEPT     tcp  --  *      *       10.36.199.0/24       172.17.23.32/27      tcp dpt:22
+   51  7673 ACCEPT     tcp  --  *      *       172.17.23.32/27      10.36.199.0/24       tcp spt:22
+  532 44580 ACCEPT     tcp  --  *      *       10.36.199.0/24       172.17.23.32/27      tcp dpt:3389
+  528 74448 ACCEPT     tcp  --  *      *       172.17.23.32/27      10.36.199.0/24       tcp spt:3389
+    3  3780 LOG        all  --  *      *       0.0.0.0/0            0.0.0.0/0            limit: avg 10/sec burst 5 LOG flags 0 level 4 prefix "TO_DROP_FORWARD"
+    3  3780 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+11141 2447K ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0
+```
+
+<b>ls_iptables</b>
+``` bash
+[pgagneja@LS-23 ~]$ sudo iptables -nvL
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+ 6384 1449K ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+    0     0 ACCEPT     icmp --  *      *       0.0.0.0/0            0.0.0.0/0
+    0     0 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0
+    0     0 ACCEPT     tcp  --  *      *       192.168.23.32/27     0.0.0.0/0            tcp dpt:22
+    1    52 ACCEPT     tcp  --  *      *       10.36.199.0/24       0.0.0.0/0            tcp dpt:22
+  181 32123 LOG        all  --  *      *       0.0.0.0/0            0.0.0.0/0            limit: avg 10/sec burst 5 LOG flags 0 level 4 prefix "TO_DROP_INPUT"
+  181 32123 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+    0     0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+ 8834 2122K ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0
+```
