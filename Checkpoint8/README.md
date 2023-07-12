@@ -11,6 +11,7 @@
 - [Checkpoint8 Submission](#checkpoint8-submission)
     - [Table of Contents](#table-of-contents)
     - [Part A - Creating \& Configuring VMs - Using Azure CLI Scripts](#part-a---creating--configuring-vms---using-azure-cli-scripts)
+    - [Part B - Basic Connectivity - Linux VMs Firewall Setting](#part-b---basic-connectivity---linux-vms-firewall-setting)
 
 ### Part A - Creating & Configuring VMs - Using Azure CLI Scripts
 
@@ -90,4 +91,20 @@ V2                  canadaeast  wc-23-ver-0.0.1  Succeeded            STUDENT-RG
 V2                  canadaeast  wc-23-ver-7      Succeeded            STUDENT-RG-954636
 V2                  canadaeast  ws-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
 V2                  canadaeast  ws-23-ver-7      Succeeded            STUDENT-RG-954636
+```
+
+### Part B - Basic Connectivity - Linux VMs Firewall Setting
+
+1. <b>Status of the Apache server and MariDB server in your LS-23</b>
+
+Apache:
+``` bash
+[pgagneja@LS-23 ~]$ sudo systemctl status apache2
+Unit apache2.service could not be found.
+```
+
+MariDB:
+``` bash
+[pgagneja@LS-23 ~]$ sudo systemctl status mariadb
+Unit mariadb.service could not be found.
 ```
