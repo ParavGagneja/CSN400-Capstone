@@ -72,7 +72,11 @@ WC-23_disk1_72a25cbf85324260a8149f734f622536  STUDENT-RG-954636  canadaeast     
 WS-23_disk1_7d9e794e6d264abfaab0b0b52f7fb0fd  STUDENT-RG-954636  canadaeast           StandardSSD_LRS  Windows   127       Succeeded
 ```
 
-5. list of all custom images:
+4. <b>Rules added in NSG:</b>
+   
+`declare -a NSG_list=("$WC_NSG_name" "$LR_NSG_name" "$LS_NSG_name" "$WS_NSG_name")`
+
+5. <b>list of all custom images:</b>
 
 ``` bash
 odl_user [ ~ ]$ az image list --output table
