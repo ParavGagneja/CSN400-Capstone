@@ -8,9 +8,9 @@
 
 ### Table of Contents
 
-1. [Part A - Creating & Configuring VMs - Using Azure CLI Scripts](#header)
-2. [Part B - Basic Connectivity - Linux VMs Firewall Setting](#header)
-3. [Part C - Azure Cost Analysis Charts](#header)
+- [Checkpoint8 Submission](#checkpoint8-submission)
+    - [Table of Contents](#table-of-contents)
+    - [Part A - Creating \& Configuring VMs - Using Azure CLI Scripts](#part-a---creating--configuring-vms---using-azure-cli-scripts)
 
 ### Part A - Creating & Configuring VMs - Using Azure CLI Scripts
 
