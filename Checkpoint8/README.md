@@ -133,3 +133,35 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination
 ACCEPT     all  --  anywhere             anywhere
 ```
+3. <b>Hostname</b>
+``` bash
+LR-23
+
+[pgagneja@LR-23 ~]$ sudo hostnamectl status
+   Static hostname: LR-23.CSN4002234.com
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: c30654a8e7de4cd68b942774c4e1ccca
+           Boot ID: e863d36737a64831979e86dca593414d
+    Virtualization: microsoft
+  Operating System: Red Hat Enterprise Linux 8.8 (Ootpa)
+       CPE OS Name: cpe:/o:redhat:enterprise_linux:8::baseos
+            Kernel: Linux 4.18.0-477.10.1.el8_8.x86_64
+      Architecture: x86-64
+```
+
+``` bash
+LS-23
+
+[pgagneja@LS-23 ~]$ sudo hostnamectl status
+   Static hostname: LS-23.CSN4002234.com
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: c30654a8e7de4cd68b942774c4e1ccca
+           Boot ID: e9cbfc10a477433da70d35c82d47acc6
+    Virtualization: microsoft
+  Operating System: Red Hat Enterprise Linux 8.8 (Ootpa)
+       CPE OS Name: cpe:/o:redhat:enterprise_linux:8::baseos
+            Kernel: Linux 4.18.0-477.10.1.el8_8.x86_64
+      Architecture: x86-64
+```
