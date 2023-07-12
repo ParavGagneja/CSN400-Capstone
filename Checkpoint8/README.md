@@ -71,3 +71,15 @@ LS-23_disk1_36bcd672aa8c46b190ba8e59710e8623  STUDENT-RG-954636  canadaeast     
 WC-23_disk1_72a25cbf85324260a8149f734f622536  STUDENT-RG-954636  canadaeast           StandardSSD_LRS  Windows   127       Succeeded
 WS-23_disk1_7d9e794e6d264abfaab0b0b52f7fb0fd  STUDENT-RG-954636  canadaeast           StandardSSD_LRS  Windows   127       Succeeded
 ```
+
+5. list of all custom images:
+
+``` bash
+odl_user [ ~ ]$ az image list --output table
+HyperVGeneration    Location    Name             ProvisioningState    ResourceGroup
+------------------  ----------  ---------------  -------------------  -----------------
+V2                  canadaeast  lr-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  ls-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  wc-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  ws-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+```
