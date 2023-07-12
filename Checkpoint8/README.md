@@ -108,3 +108,28 @@ MariDB:
 [pgagneja@LS-23 ~]$ sudo systemctl status mariadb
 Unit mariadb.service could not be found.
 ```
+2. <b>Command in LR-23 that show iptables chains</b>
+``` bash
+[pgagneja@LR-23 ~]$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+ACCEPT     tcp  --  anywhere             anywhere             state RELATED,ESTABLISHED
+ACCEPT     icmp --  anywhere             anywhere
+ACCEPT     all  --  anywhere             anywhere
+ACCEPT     tcp  --  10.36.199.0/24       anywhere             state NEW tcp dpt:ssh
+LOG        all  --  anywhere             anywhere             limit: avg 10/sec burst 5 LOG level warning prefix "TO_DROP_INPUT"
+DROP       all  --  anywhere             anywhere
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination
+ACCEPT     tcp  --  10.36.199.0/24       172.17.23.32/27      tcp dpt:ssh
+ACCEPT     tcp  --  172.17.23.32/27      10.36.199.0/24       tcp spt:ssh
+ACCEPT     tcp  --  10.36.199.0/24       172.17.23.32/27      tcp dpt:ms-wbt-server
+ACCEPT     tcp  --  172.17.23.32/27      10.36.199.0/24       tcp spt:ms-wbt-server
+LOG        all  --  anywhere             anywhere             limit: avg 10/sec burst 5 LOG level warning prefix "TO_DROP_FORWARD"
+DROP       all  --  anywhere             anywhere
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+ACCEPT     all  --  anywhere             anywhere
+```
