@@ -83,7 +83,11 @@ odl_user [ ~ ]$ az image list --output table
 HyperVGeneration    Location    Name             ProvisioningState    ResourceGroup
 ------------------  ----------  ---------------  -------------------  -----------------
 V2                  canadaeast  lr-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  lr-23-ver-7      Succeeded            STUDENT-RG-954636
 V2                  canadaeast  ls-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  ls-23-ver-7      Succeeded            STUDENT-RG-954636
 V2                  canadaeast  wc-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  wc-23-ver-7      Succeeded            STUDENT-RG-954636
 V2                  canadaeast  ws-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
+V2                  canadaeast  ws-23-ver-7      Succeeded            STUDENT-RG-954636
 ```
