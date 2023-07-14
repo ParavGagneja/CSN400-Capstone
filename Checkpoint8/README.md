@@ -223,7 +223,7 @@ LS-23
       Architecture: x86-64
 ```
 
-4. <b>lr_iptables</b>
+4. <b>lr_iptables.txt</b>
 ``` bash
 [pgagneja@LR-23 ~]$ sudo iptables -nvL
 Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
@@ -249,7 +249,7 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
 11141 2447K ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0
 ```
 
-<b>ls_iptables</b>
+<b>ls_iptables.txt</b>
 ``` bash
 [pgagneja@LS-23 ~]$ sudo iptables -nvL
 Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
