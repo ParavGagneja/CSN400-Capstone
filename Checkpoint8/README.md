@@ -73,8 +73,9 @@ LS-23_disk1_36bcd672aa8c46b190ba8e59710e8623  STUDENT-RG-954636  canadaeast     
 WC-23_disk1_72a25cbf85324260a8149f734f622536  STUDENT-RG-954636  canadaeast           StandardSSD_LRS  Windows   127       Succeeded
 WS-23_disk1_7d9e794e6d264abfaab0b0b52f7fb0fd  STUDENT-RG-954636  canadaeast           StandardSSD_LRS  Windows   127       Succeeded
 ```
-
-4. <b>Rules added in NSG:</b>
+2. We created NIC's seprate from virtual machines because we need them later on, if we create NIC's with VM's so when deleting VM's it will delete NIC's too. So when we deleted VM's using the scripts it gave us a prompt displaying "Do you want to delete NIC" where we answered so to keep NIC's safe.
+  
+3. <b>Rules added in NSG:</b>
    
 `declare -a NSG_list=("$WC_NSG_name" "$LR_NSG_name" "$LS_NSG_name" "$WS_NSG_name")`
 
