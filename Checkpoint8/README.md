@@ -296,3 +296,9 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
 |4|Student-RG-954636| Pie Chart | NA | Last Month | Service Name | NA | <img src="images/4.jpg" alt="Service Name Piechart" style="float: left; margin-right: 10px;" /> |
 |5|Student-RG-954636| Pie Chart | NA | Last Month | Service Family | NA | <img src="images/5.jpg" alt="Service Family Piechart" style="float: left; margin-right: 10px;" /> |
 |6|Student-RG-954636| Pie Chart | NA | Last Month | Product | NA | <img src="images/6.jpg" alt="Product Piechart" style="float: left; margin-right: 10px;" /> |
+
+`Customized dashboard`
+
+<img src="images/dashboard.jpg"
+     alt="Customized dashboard"
+     style="float: left; margin-right: 10px;" />
