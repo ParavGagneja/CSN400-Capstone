@@ -79,7 +79,7 @@ WS-23_disk1_7d9e794e6d264abfaab0b0b52f7fb0fd  STUDENT-RG-954636  canadaeast     
   
 4. <b>Rules added in NSG:</b>
    
-`declare -a NSG_list=("$WC_NSG_name" "$LR_NSG_name" "$LS_NSG_name" "$WS_NSG_name")`
+Rules we added in NSG is for SSH to linux machines with port 22 and RDP connection to windows server.
 
 5. <b>list of all custom images:</b>
 
@@ -310,4 +310,5 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
 
 <img src="images/dashboard.jpg"
      alt="customized dashboard"
+     title="Dashboard"
      style="float: left; margin-right: 10px;" />
