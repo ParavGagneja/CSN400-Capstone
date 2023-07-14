@@ -16,7 +16,7 @@
 
 ### Part A - Creating & Configuring VMs - Using Azure CLI Scripts
 
-1. List of VM, NSG, NIC, and Disks:
+1. <b>List of VM, NSG, NIC, and Disks:</b>
 ``` bash
 Virtual Machines(VM):
 
@@ -75,7 +75,7 @@ WS-23_disk1_7d9e794e6d264abfaab0b0b52f7fb0fd  STUDENT-RG-954636  canadaeast     
 ```
 2. <p>We created NIC's seprate from virtual machines because we need them later on, if we create NIC's with VM's so when deleting VM's it will delete NIC's too. So when we deleted VM's using the scripts it gave us a prompt displaying "Do you want to delete NIC" where we answered so to keep NIC's safe.</p>
 
-3. No, its not possible to use exisitng NIC while creating VM's from portal. Indeed this is a limitation in working from portal as this is possible only by using the CLI or PowerShell
+3. <p>No, its not possible to use exisitng NIC while creating VM's from portal. Indeed this is a limitation in working from portal as this is possible only by using the CLI or PowerShell.</p>
   
 4. <b>Rules added in NSG:</b>
    
@@ -96,14 +96,14 @@ V2                  canadaeast  wc-23-ver-7      Succeeded            STUDENT-RG
 V2                  canadaeast  ws-23-ver-0.0.1  Succeeded            STUDENT-RG-954636
 V2                  canadaeast  ws-23-ver-7      Succeeded            STUDENT-RG-954636
 ```
-6. List of all the VMs after deleting all virtual machines:
+6. <b>List of all the VMs after deleting all virtual machines:</b>
 ``` bash
 odl_user [ ~ ]$ az vm list 
 []
 odl_user [ 
 ```
 
-7. list of VM, NSG, NIC, and Disks using Azure CLI in table format:
+7. <b>list of VM, NSG, NIC, and Disks using Azure CLI in table format:</b>
 ``` bash
 VM:
 
