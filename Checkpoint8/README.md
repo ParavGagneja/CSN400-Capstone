@@ -191,6 +191,10 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination
 ACCEPT     all  --  anywhere             anywhere
 ```
+``` bash
+
+System security can be improved by restricting connections, by applying REJECT or DROP policy or and using NSG.
+```
 3. <b>Hostname</b>
 ``` bash
 LR-23
@@ -299,8 +303,8 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
 
 <br>
 
-<b>Customized dashboard</b>
+<b>Customized Dashboard</b>
 
 <img src="images/dashboard.jpg"
-     alt="Customized dashboard"
+     alt="customized dashboard"
      style="float: left; margin-right: 10px;" />
