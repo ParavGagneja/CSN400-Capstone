@@ -270,3 +270,15 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination
  8834 2122K ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0
 ```
+
+5. <b>SSH to LS-23</b>
+
+<img src="images/LS-23.jpg"
+     alt="SSH directly from host image"
+     style="float: left; margin-right: 10px;" />
+
+<b>RDP to WS-23</b>
+
+<img src="images/WS-23.jpg"
+     alt="RDP to WS-23"
+     style="float: left; margin-right: 10px;" />
