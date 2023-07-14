@@ -12,6 +12,7 @@
     - [Table of Contents](#table-of-contents)
     - [Part A - Creating \& Configuring VMs - Using Azure CLI Scripts](#part-a---creating--configuring-vms---using-azure-cli-scripts)
     - [Part B - Basic Connectivity - Linux VMs Firewall Setting](#part-b---basic-connectivity---linux-vms-firewall-setting)
+    - [Part C - Azure Cost Analysis Charts](#part-c---azure-cost-analysis-charts)
 
 ### Part A - Creating & Configuring VMs - Using Azure CLI Scripts
 
@@ -282,3 +283,16 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
 <img src="images/WS-23.jpg"
      alt="RDP to WS-23"
      style="float: left; margin-right: 10px;" />
+
+
+
+### Part C - Azure Cost Analysis Charts
+
+| No. | Scope | Chart Type | VIEW Type |  Date Range | Group By | Granularity| Example |
+|-|-|-|-|-|-|-|-|
+|1|Student-RG-954636| Column (Stacked) | DailyCosts | Last 7 Days | Resource | Daily | <img src="images/1.jpg" alt="Daily Cost Barchart" style="float: left; margin-right: 10px;" /> |
+|2|Student-RG-954636| Column (Stacked) | DailyCosts | Last 7 Days | Service | Daily | <img src="images/2.jpg" alt="Daily Cost Service-Barchart.jpg" style="float: left; margin-right: 10px;" /> |
+|3|Student-RG-954636| Area| AccumulatedCosts | Last 7 Days | Resource | Accumulated | <img src="images/3.jpg" alt="Accumulated Resource Barchart" style="float: left; margin-right: 10px;" /> |
+|4|Student-RG-954636| Pie Chart | NA | Last Month | Service Name | NA | <img src="images/4.jpg" alt="Service Name Piechart" style="float: left; margin-right: 10px;" /> |
+|5|Student-RG-954636| Pie Chart | NA | Last Month | Service Family | NA | <img src="images/5.jpg" alt="Service Family Piechart" style="float: left; margin-right: 10px;" /> |
+|6|Student-RG-954636| Pie Chart | NA | Last Month | Product | NA | <img src="images/6.jpg" alt="Product Piechart" style="float: left; margin-right: 10px;" /> |
