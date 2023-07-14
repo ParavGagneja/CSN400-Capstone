@@ -78,8 +78,7 @@ WS-23_disk1_7d9e794e6d264abfaab0b0b52f7fb0fd  STUDENT-RG-954636  canadaeast     
 3. <p>No, its not possible to use exisitng NIC while creating VM's from portal. Indeed this is a limitation in working from portal as this is possible only by using the CLI or PowerShell.</p>
   
 4. <b>Rules added in NSG:</b>
-   
-Rules we added in NSG is for SSH to linux machines with port 22 and RDP connection to windows server.
+   Rules we added in NSG is for SSH to linux machines with port 22 and RDP connection to windows server.
 
 5. <b>list of all custom images:</b>
 
