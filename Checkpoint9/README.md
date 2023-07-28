@@ -19,3 +19,11 @@
      alt="apache-iis-filtered.pcap"
      title="apache-iis-filtered.pcap"
      style="float: left; margin-right: 10px;" />
+
+
+### Part B – Logging and Analyzing FTP and MySQL Traffic
+
+<img src="images/2.jpg"
+     alt="apache-iis-filtered.pcap"
+     title="apache-iis-filtered.pcap"
+     style="float: left; margin-right: 10px;" />
