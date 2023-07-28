@@ -40,7 +40,9 @@
 
 ### Part C – Adjusting firewalls to DROP and LOG Traffic
 <br>
+
 ``` bash
+
 [pgagneja@LR-23 ~]$ cat lr-drop-log.sh
 # Flush All Iptables Chains/Firewall rules
 echo "-------------------------------------------"
