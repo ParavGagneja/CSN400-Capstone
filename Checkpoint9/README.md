@@ -15,23 +15,31 @@
     - [Part C – Adjusting firewalls to DROP and LOG Traffic](#part-c--adjusting-firewalls-to-drop-and-log-traffic)
     - [Part D - Azure Cost Analysis Charts](#part-d---azure-cost-analysis-charts)
 
+<br>
+
 ### Part A – Logging and Analyzing DNS and HTTP Traffic
+
+<br>
 
 <img src="images/1.jpg"
      alt="apache-iis-filtered.pcap"
      title="apache-iis-filtered.pcap"
      style="float: left; margin-right: 10px;" />
 
+<br>
 
 ### Part B – Logging and Analyzing FTP and MySQL Traffic
+<br>
 
 <img src="images/2.jpg"
      alt="apache-iis-filtered.pcap"
      title="apache-iis-filtered.pcap"
      style="float: left; margin-right: 10px;" />
 
-### Part C – Adjusting firewalls to DROP and LOG Traffic
+<br>
 
+### Part C – Adjusting firewalls to DROP and LOG Traffic
+<br>
 ``` bash
 [pgagneja@LR-23 ~]$ cat lr-drop-log.sh
 # Flush All Iptables Chains/Firewall rules
@@ -161,12 +169,14 @@ echo "allow any tcp traffic pass through Source LS -xx to destination WC-xx subn
 iptables -A FORWARD -p tcp -d 10.36.199.4/24 -s 172.17.23.36 --sport 50000:51000 -j ACCEPT
 
 ```
+<br>
 
 <img src="images/3.jpg"
      alt="lr-nondrop-log-filtered"
      title="lr-nondrop-log-filtered"
      style="float: left; margin-right: 10px;" />
 
+<br>
 
 ``` bash
 
@@ -175,6 +185,7 @@ Jul 28 03:37:21 LR-23 kernel: IN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b:f0:ac:3d:94:1c
 Jul 28 03:23:17 LR-23 kernel: IN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b:f0:ac:3d:94:1c:0e:00:08:00 SRC=10.36.199.4 DST=172.17.23.37 LEN=52 TOS=0x00 PREC=0x00 TTL=127 ID=41908 DF PROTO=TCP SPT=54409 DPT=22 WINDOW=64240 RES=0x00 SYN URGP=0
 
 ```
+<br>
 
 <img src="images/4.jpg"
      alt="lr-drop-log-filtered"
@@ -182,3 +193,12 @@ Jul 28 03:23:17 LR-23 kernel: IN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b:f0:ac:3d:94:1c
      style="float: left; margin-right: 10px;" />
 
 ### Part D - Azure Cost Analysis Charts
+
+| No. | Scope | Chart Type | VIEW Type |  Date Range | Group By | Granularity| Example |
+|-|-|-|-|-|-|-|-|
+|1|Student-RG-954636| Column (Stacked) | DailyCosts | Last 7 Days | Resource | Daily | <img src="images/5.jpg" alt="Daily Cost Barchart" style="float: left; margin-right: 10px;" /> |
+|2|Student-RG-954636| Column (Stacked) | DailyCosts | Last 7 Days | Service | Daily | <img src="images/6.jpg" alt="Daily Cost Service-Barchart.jpg" style="float: left; margin-right: 10px;" /> |
+|3|Student-RG-954636| Area| AccumulatedCosts | Last 7 Days | Resource | Accumulated | <img src="images/7.jpg" alt="Accumulated Resource Barchart" style="float: left; margin-right: 10px;" /> |
+|4|Student-RG-954636| Pie Chart | NA | Last Month | Service Name | NA | <img src="images/8.jpg" alt="Service Name Piechart" style="float: left; margin-right: 10px;" /> |
+|5|Student-RG-954636| Pie Chart | NA | Last Month | Service Family | NA | <img src="images/9.jpg" alt="Service Family Piechart" style="float: left; margin-right: 10px;" /> |
+|6|Student-RG-954636| Pie Chart | NA | Last Month | Product | NA | <img src="images/10.jpg" alt="Product Piechart" style="float: left; margin-right: 10px;" /> |
