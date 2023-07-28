@@ -176,4 +176,9 @@ Jul 28 03:23:17 LR-23 kernel: IN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b:f0:ac:3d:94:1c
 
 ```
 
+<img src="images/4.jpg"
+     alt="lr-drop-log-filtered"
+     title="lr-drop-log-filtered"
+     style="float: left; margin-right: 10px;" />
+
 ### Part D - Azure Cost Analysis Charts
