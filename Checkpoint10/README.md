@@ -29,7 +29,7 @@ False                         canadaeast  RT-EX-23  Succeeded            Student
 ```
 List of Routes
 
-<strong>Route Table: RT-23</strong>
+Route Table: RT-23
 
 odl_user [ ~ ]$ az network route-table route list --resource-group Student-RG-954636 --route-table-name RT-23 --output table
 AddressPrefix     HasBgpOverride    Name              NextHopIpAddress    NextHopType       ProvisioningState    ResourceGroup
@@ -37,4 +37,12 @@ AddressPrefix     HasBgpOverride    Name              NextHopIpAddress    NextHo
 172.17.23.32/27   False             Route-to-Server   192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
 10.36.199.0/24    False             Route-to-Desktop  192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
 192.168.18.32/27  False             External-Router   192.168.23.36       VirtualAppliance  Succeeded            Student-RG-954636
+
+
+Route Table: RT-EX-23
+
+odl_user [ ~ ]$ az network route-table route list --resource-group Student-RG-954636 --route-table-name RT-EX-23 --output table
+AddressPrefix     HasBgpOverride    Name          NextHopIpAddress    NextHopType       ProvisioningState    ResourceGroup
+----------------  ----------------  ------------  ------------------  ----------------  -------------------  -----------------
+192.168.18.32/27  False             Route-to-Hub  192.168.99.36       VirtualAppliance  Succeeded            Student-RG-954636
 ```
