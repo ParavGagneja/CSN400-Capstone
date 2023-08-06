@@ -13,6 +13,7 @@
     - [Part A - Route Table Updates](#part-a---route-table-updates)
     - [Part B – Port Forwarding Basic Connectivity](#part-b--port-forwarding-basic-connectivity)
     - [Part C – Logging \& Isolating Masqueraded Packets](#part-c--logging--isolating-masqueraded-packets)
+    - [Part D - Azure Cost Analysis Charts](#part-d---azure-cost-analysis-charts)
 
 ### Part A - Route Table Updates
 
@@ -137,10 +138,20 @@ Aug  4 00:22:34 LR-23 kernel: TO_DROP_FORWARDIN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b
 Aug  4 01:09:18 LR-23 kernel: TO_DROP_FORWARDIN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b:f0:ac:3d:94:1b:f5:c4:08:00 SRC=192.168.18.36 DST=172.17.23.37 LEN=88 TOS=0x08 PREC=0x40 TTL=62 ID=6033 DF PROTO=TCP SPT=49790 DPT=22 WINDOW=300 RES=0x00 ACK PSH URGP=0
 ```
 
-```
-masqueraded-capture.pcap
-```
+`masqueraded-capture.pcap``
+
 <img src="images/1.jpg"
      alt="masqueraded-capture.pcap"
      title="masqueraded-capture.pcap"
      style="float: left; margin-right: 10px;" />
+
+### Part D - Azure Cost Analysis Charts
+
+| No. | Scope | Chart Type | VIEW Type |  Date Range | Group By | Granularity| Example |
+|-|-|-|-|-|-|-|-|
+|1|Student-RG-954636| Column (Stacked) | DailyCosts | Last 7 Days | Resource | Daily | <img src="images/2.jpg" alt="Daily Cost Barchart" style="float: left; margin-right: 10px;" /> |
+|2|Student-RG-954636| Column (Stacked) | DailyCosts | Last 7 Days | Service | Daily | <img src="images/3.jpg" alt="Daily Cost Service-Barchart.jpg" style="float: left; margin-right: 10px;" /> |
+|3|Student-RG-954636| Area| AccumulatedCosts | Last 7 Days | Resource | Accumulated | <img src="images/4.jpg" alt="Accumulated Resource Barchart" style="float: left; margin-right: 10px;" /> |
+|4|Student-RG-954636| Pie Chart | NA | Last Month | Service Name | NA | <img src="images/5.jpg" alt="Service Name Piechart" style="float: left; margin-right: 10px;" /> |
+|5|Student-RG-954636| Pie Chart | NA | Last Month | Service Family | NA | <img src="images/6.jpg" alt="Service Family Piechart" style="float: left; margin-right: 10px;" /> |
+|6|Student-RG-954636| Pie Chart | NA | Last Month | Product | NA | <img src="images/7.jpg" alt="Product Piechart" style="float: left; margin-right: 10px;" /> |
