@@ -136,3 +136,12 @@ Aug  4 00:22:34 LR-23 kernel: TO_DROP_FORWARDIN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b
 ### SSH	Hub or Partner Router	RANDOM(5)	Your Linux Server	22
 Aug  4 01:09:18 LR-23 kernel: TO_DROP_FORWARDIN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b:f0:ac:3d:94:1b:f5:c4:08:00 SRC=192.168.18.36 DST=172.17.23.37 LEN=88 TOS=0x08 PREC=0x40 TTL=62 ID=6033 DF PROTO=TCP SPT=49790 DPT=22 WINDOW=300 RES=0x00 ACK PSH URGP=0
 ```
+
+```
+masqueraded-capture.pcap
+
+<img src="images/1.jpg"
+     alt="masqueraded-capture.pcap"
+     title="masqueraded-capture.pcap"
+     style="float: left; margin-right: 10px;" />
+```
