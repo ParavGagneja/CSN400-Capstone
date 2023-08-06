@@ -46,3 +46,27 @@ AddressPrefix     HasBgpOverride    Name          NextHopIpAddress    NextHopTyp
 ----------------  ----------------  ------------  ------------------  ----------------  -------------------  -----------------
 192.168.18.32/27  False             Route-to-Hub  192.168.99.36       VirtualAppliance  Succeeded            Student-RG-954636
 ```
+<br>
+
+```
+Subnets
+
+Route Table: RT-23; Vnet: Server-23
+
+odl_user [ ~ ]$ az network vnet subnet list --resource-group Student-RG-954636 --vnet-name Server-23 --output table
+AddressPrefix     Name    PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
+----------------  ------  --------------------------------  -----------------------------------  -------------------  -----------------
+172.17.23.64/27   SN2     Disabled                          Enabled                              Succeeded            Student-RG-954636
+172.17.23.96/27   SN3     Disabled                          Enabled                              Succeeded            Student-RG-954636
+172.17.23.128/27  SN4     Disabled                          Enabled                              Succeeded            Student-RG-954636
+172.17.23.32/27   SN1     Disabled                          Enabled                              Succeeded            Student-RG-954636
+
+Route Table: RT-23; Vnet: Student-954636-vnet
+
+odl_user [ ~ ]$ az network vnet subnet list --resource-group Student-RG-954636 --vnet-name Student-954636-vnet --output table
+AddressPrefix    Name                    PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
+---------------  ----------------------  --------------------------------  -----------------------------------  -------------------  -----------------
+10.36.199.0/24   Virtual-Desktop-Client  Enabled                           Enabled                              Succeeded            Student-RG-954636
+
+
+```
