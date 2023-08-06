@@ -139,9 +139,8 @@ Aug  4 01:09:18 LR-23 kernel: TO_DROP_FORWARDIN=eth0 OUT=eth0 MAC=00:0d:3a:0a:2b
 
 ```
 masqueraded-capture.pcap
-
+```
 <img src="images/1.jpg"
      alt="masqueraded-capture.pcap"
      title="masqueraded-capture.pcap"
      style="float: left; margin-right: 10px;" />
-```
